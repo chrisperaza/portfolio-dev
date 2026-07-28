@@ -1,4 +1,19 @@
+/*****************************/
+/*** VARIABLE STYLES ***/
+/*****************************/
 :root {
+  /* color palette */
+  --body: #162127;
+  --container: #212e36;
+  --border: #3c4952;
+  --content: #a2afb7;
+  --title: #eef3f5;
+  --main: #53a8f2;
+  --main_2: #fff;
+  --dark_clear: #fff;
+}
+
+/* :root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -108,4 +123,4 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
+} */
