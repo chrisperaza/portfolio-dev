@@ -1,4 +1,7 @@
 // import React from 'react'
+// Import icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Banner = () => {
   return (
@@ -21,21 +24,9 @@ const Banner = () => {
         </button>
         <button className='banner_buttons-projects'>
           <p>Check out my projects</p>
-          <svg
-            width='17'
-            height='15'
-            viewBox='0 0 17 15'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              d='M8.625 0.75L15.375 7.5L8.625 14.25M14.4375 7.5H0.75'
-              stroke='#52A5E0'
-              strokeWidth='1.5'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-            />
-          </svg>
+          <div>
+            <FontAwesomeIcon className='arrowRightIcon' icon={faArrowRight} />
+          </div>
         </button>
       </div>
     </div>
