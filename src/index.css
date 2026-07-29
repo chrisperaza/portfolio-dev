@@ -68,7 +68,7 @@ body {
   }
 
   .burgerMenu-icon {
-    fill: var(--content);
+    color: var(--content);
   }
 }
 
@@ -158,16 +158,24 @@ body {
       p {
         font-size: var(--text-smaller);
         color: var(--main);
+        transition: transform 0.3s ease;
       }
 
-      svg {
+      .arrowRightIcon {
+        color: var(--main);
+        justify-content: center;
         transition: transform 0.3s ease;
       }
 
       &:hover {
         cursor: pointer;
 
-        svg {
+        p {
+          color: var(--main-dark);
+        }
+
+        .arrowRightIcon {
+          color: var(--main-dark);
           transform: translateX(6px);
         }
       }
