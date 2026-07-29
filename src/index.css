@@ -30,6 +30,12 @@
   --text-medium: 18px;
   --text-small: 14px;
   --text-smaller: 12px;
+  /* font weight */
+  --text-bolder: 500;
+  --text-bold: 400;
+  --text-normal: 300;
+  --text-light: 200;
+  --text-lighter: 100;
 }
 
 /*****************************/
@@ -75,6 +81,15 @@ body {
 /*****************************/
 /*** BANNER ***/
 /*****************************/
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/*****************************/
+/*** BANNER ***/
+/*****************************/
 .banner {
   width: 100%;
   padding: 15px 20px;
@@ -105,7 +120,7 @@ body {
 
     .banner_section-title {
       font-size: var(--text-bigger);
-      font-weight: 500;
+      font-weight: var(--text-bolder);
       color: var(--content);
 
       .banner_section-titleName {
@@ -177,6 +192,80 @@ body {
         .arrowRightIcon {
           color: var(--main-dark);
           transform: translateX(6px);
+        }
+      }
+    }
+  }
+}
+
+/*****************************/
+/*** SKILLS SECTION ***/
+/*****************************/
+.skillsContainer {
+  width: 100%;
+  padding: 0 20px;
+
+  .skillsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    background-color: var(--container);
+    padding: 40px 10px;
+    border-radius: 10px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .skillsSection-title,
+      .skillsSection-text {
+        text-align: center;
+      }
+
+      .skillsSection-title {
+        font-weight: var(--text-normal);
+        font-size: var(--text-medium);
+        color: var(--title);
+      }
+
+      .skillsSection-text {
+        font-weight: var(--text-bold);
+        font-size: var(--text-smaller);
+        color: var(--main);
+      }
+    }
+
+    .skillsSection-list {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .skillsSection-button {
+      background-color: transparent;
+      border-radius: 50px;
+      border: solid 2px var(--main);
+      padding: 10px 20px;
+      transition: transform 0.3s ease;
+
+      p {
+        font-weight: var(--text-bold);
+        font-size: var(--text-smaller);
+        color: var(--main);
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: var(--main-dark);
+        border-color: var(--main-dark);
+
+        p {
+          color: var(--body);
         }
       }
     }
