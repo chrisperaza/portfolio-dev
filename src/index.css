@@ -19,10 +19,17 @@
   --content: #a2afb7;
   --title: #eef3f5;
   --main: #53a8f2;
+  --main-dark: #3e9aef;
   --main_2: #fff;
   --dark_clear: #fff;
   /* font family */
   --inter: 'Inter', sans-serif;
+  /* font size */
+  --text-bigger: 25px;
+  --text-big: 20px;
+  --text-medium: 18px;
+  --text-small: 14px;
+  --text-smaller: 12px;
 }
 
 /*****************************/
@@ -32,6 +39,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--inter);
 }
 
 /*****************************/
@@ -61,5 +69,108 @@ body {
 
   .burgerMenu-icon {
     fill: var(--content);
+  }
+}
+
+/*****************************/
+/*** BANNER ***/
+/*****************************/
+.banner {
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  .banner_section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    p,
+    h2 {
+      text-align: center;
+      width: 90%;
+    }
+
+    p {
+      font-size: var(--text-small);
+    }
+
+    .banner_section-greetings {
+      color: var(--main);
+    }
+
+    .banner_section-title {
+      font-size: var(--text-bigger);
+      font-weight: 500;
+      color: var(--content);
+
+      .banner_section-titleName {
+        color: var(--title);
+      }
+    }
+
+    .banner_section-text {
+      color: var(--content);
+      line-height: 20px;
+      width: 80%;
+    }
+  }
+
+  .banner_buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+    .banner_buttons-talk {
+      background-color: var(--main);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        background-color: var(--main-dark);
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      p {
+        font-size: var(--text-smaller);
+        color: var(--body);
+      }
+    }
+
+    .banner_buttons-projects {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      padding: 10px 0;
+
+      p {
+        font-size: var(--text-smaller);
+        color: var(--main);
+      }
+
+      svg {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        svg {
+          transform: translateX(6px);
+        }
+      }
+    }
   }
 }
