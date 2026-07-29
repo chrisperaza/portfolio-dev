@@ -1,6 +1,9 @@
 // import React from 'react'
 // Import images
 import christianPhoto from '../assets/christianPeraza_photo.png';
+// Import icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
@@ -10,16 +13,7 @@ const Header = () => {
         src={christianPhoto}
         alt='Profile photo of Christian Peraza smiling, wearing a white shirt and dark green tie, with a blurred nature background.'
       />
-      <svg
-        className='burgerMenu-icon'
-        width='21'
-        height='14'
-        viewBox='0 0 21 14'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-      >
-        <path d='M0 14H21V11.6665H0V14ZM0 8.16648H21V5.83352H0V8.16648ZM0 0V2.33352H21V0H0Z' />
-      </svg>
+      <FontAwesomeIcon className='burgerMenu-icon fa-lg' icon={faBars} />
     </header>
   );
 };
