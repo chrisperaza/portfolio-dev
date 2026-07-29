@@ -1,11 +1,13 @@
 // import React from 'react'
 // Import components
 import Banner from './Banner';
+import SkillsSection from './SkillsSection';
 
 const Main = () => {
   return (
-    <main>
+    <main className='main'>
       <Banner />
+      <SkillsSection />
     </main>
   );
 };
