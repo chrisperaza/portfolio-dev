@@ -3,6 +3,7 @@
 import Banner from './Banner';
 import SkillsSection from './SkillsSection';
 import AboutMeSection from './AboutMeSection';
+import ContactMeSection from './ContactMeSection';
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <Banner />
       <SkillsSection />
       <AboutMeSection />
+      <ContactMeSection />
     </main>
   );
 };
