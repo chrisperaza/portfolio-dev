@@ -13,7 +13,7 @@ const SocialMediaList = () => {
       <li className='socialMedia-item'>
         <a
           href={socialMediaArray[0].link}
-          title={socialMediaArray[0].name}
+          title={socialMediaArray[0].title}
           target='_blank'
         >
           <FontAwesomeIcon className='socialMedia-icon fa-lg' icon={faGithub} />
@@ -22,7 +22,7 @@ const SocialMediaList = () => {
       <li className='socialMedia-item'>
         <a
           href={socialMediaArray[1].link}
-          title={socialMediaArray[1].name}
+          title={socialMediaArray[1].title}
           target='_blank'
         >
           <FontAwesomeIcon
@@ -34,7 +34,7 @@ const SocialMediaList = () => {
       <li className='socialMedia-item'>
         <a
           href={socialMediaArray[2].link}
-          title={socialMediaArray[2].name}
+          title={socialMediaArray[2].title}
           target='_blank'
         >
           <FontAwesomeIcon
