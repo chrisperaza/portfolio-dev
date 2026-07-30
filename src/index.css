@@ -375,3 +375,62 @@ body {
     }
   }
 }
+
+/*****************************/
+/*** CONTACT ME SECTION ***/
+/*****************************/
+.contactMe-container {
+  width: 100%;
+  padding: 60px 20px;
+
+  .contactMe-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+
+    .contactMe-titles {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+
+      h2,
+      p {
+        text-align: center;
+      }
+
+      h2 {
+        font-size: var(--text-bigger);
+        font-weight: var(--text-bold);
+        color: var(--title);
+      }
+
+      p {
+        color: var(--content);
+        font-size: var(--text-small);
+        width: 90%;
+        line-height: 20px;
+      }
+    }
+
+    .contactMe-button {
+      background-color: var(--main);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        background-color: var(--main-dark);
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      p {
+        font-size: var(--text-smaller);
+        color: var(--body);
+      }
+    }
+  }
+}
