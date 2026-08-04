@@ -9,17 +9,10 @@ const ProjectsItem = ({ image, title, description, repoLink, demoLink }) => {
     <li className='projectsSection-item'>
       <a className='projectsSection-link' href={demoLink} target='_blank'>
         <section className='projectsSection-linkContainer'>
-          <img
-            className='projectImage'
-            src={image}
-            alt={`${title} cover`}
-            width={100}
-          />
-          <div className='projectContainer'>
-            <div className='projectContainer-titles'>
-              <h3>{title}</h3>
-              <p>{description}</p>
-            </div>
+          <img className='projectImage' src={image} alt={`${title} cover`} />
+          <div className='projectTitles'>
+            <h3>{title}</h3>
+            <p>{description}</p>
           </div>
         </section>
       </a>
