@@ -199,6 +199,120 @@ body {
 }
 
 /*****************************/
+/*** PROJECTS SECTION ***/
+/*****************************/
+.projectsSection {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .projectsSection-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 20px 25px;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: var(--text-bigger);
+      font-weight: var(--text-bold);
+      color: var(--title);
+    }
+
+    p {
+      color: var(--content);
+      font-size: var(--text-small);
+      line-height: 20px;
+    }
+  }
+
+  .projectsSection-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .projectsSection-item {
+      background-color: var(--container);
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #21374e;
+      }
+
+      .projectsSection-link {
+        text-decoration-line: none;
+
+        .projectsSection-linkContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+
+          .projectImage {
+            width: 100%;
+            border-radius: 10px;
+          }
+
+          .projectTitles {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h3 {
+              color: var(--title);
+              font-weight: var(--text-bold);
+              font-size: var(--text-medium);
+              line-height: 30px;
+            }
+            p {
+              color: var(--content);
+              font-weight: var(--text-normal);
+              font-size: var(--text-smaller);
+              line-height: 18px;
+            }
+          }
+        }
+      }
+
+      .project-linkList {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        .project-linkItem {
+          .socialMedia-icon {
+            color: var(--content);
+            transition: transform 0.3s ease;
+          }
+          &:hover {
+            cursor: pointer;
+
+            .socialMedia-icon {
+              color: var(--main-dark);
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*****************************/
 /*** SKILLS SECTION ***/
 /*****************************/
 .skillsContainer {
@@ -384,7 +498,7 @@ body {
 /*****************************/
 .contactMe-container {
   width: 100%;
-  padding: 60px 20px;
+  padding: 30px 20px 60px 20px;
 
   .contactMe-section {
     display: flex;
