@@ -1,13 +1,11 @@
 // import React from 'react'
-// Import database
-import { featuredProjectsArray } from '../database/featuredProjects';
 // Import components
 import ProjectsItem from './ProjectsItem';
 
-const ProjectsList = ({ itemsQuantity }) => {
+const ProjectsList = ({ itemsQuantity, database }) => {
   return (
     <ul className='projectsSection-list'>
-      {featuredProjectsArray
+      {database
         .filter((currentValue, index) => index < itemsQuantity)
         .map((currentValue) => (
           <ProjectsItem
