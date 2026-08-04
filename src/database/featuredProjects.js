@@ -2,7 +2,7 @@ export const featuredProjectsArray = [
   {
     id: 1,
     image:
-      'https://res.cloudinary.com/dx29auvvm/image/upload/v1785635411/spotify-clone-portfolio-cover_igpz1j.png',
+      'https://res.cloudinary.com/dx29auvvm/image/upload/v1785814603/spotify-clone-portfolio-cover_iqauum.png',
     title: 'Spotify Clone - MERN Stack App',
     techs: [
       {
@@ -30,8 +30,8 @@ export const featuredProjectsArray = [
   {
     id: 2,
     image:
-      'https://res.cloudinary.com/dx29auvvm/image/upload/v1785635420/movie-finder-portfolio-cover_xnkxh0.png',
-    title: 'Movie Finder - JavaScript Vanilla App',
+      'https://res.cloudinary.com/dx29auvvm/image/upload/v1785814603/movie-finder-portfolio-cover_f1xxat.png',
+    title: 'Movie Finder - JS Vanilla App',
     techs: [
       {
         name: 'HTML5',
@@ -58,7 +58,7 @@ export const featuredProjectsArray = [
   {
     id: 3,
     image:
-      'https://res.cloudinary.com/dx29auvvm/image/upload/v1785635411/image-gallery-portfolio-cover_focl4l.png',
+      'https://res.cloudinary.com/dx29auvvm/image/upload/v1785814603/image-gallery-portfolio-cover_tar5ry.png',
     title: 'Image Gallery - React App',
     techs: [
       {
