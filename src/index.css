@@ -313,6 +313,54 @@ body {
 }
 
 /*****************************/
+/*** CHECK MY GITHUB SECTION ***/
+/*****************************/
+.checkMyGithub-container {
+  width: 100%;
+  padding: 30px 20px;
+
+  .checkMyGithub-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    .socialMedia-icon {
+      color: var(--border);
+      margin-bottom: 10px;
+    }
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: var(--text-bigger);
+      font-weight: var(--text-bold);
+      color: var(--title);
+
+      a {
+        color: var(--title);
+        transition: color 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          color: var(--main);
+        }
+      }
+    }
+
+    p {
+      color: var(--content);
+      font-size: var(--text-small);
+      width: 90%;
+      line-height: 20px;
+    }
+  }
+}
+
+/*****************************/
 /*** SKILLS SECTION ***/
 /*****************************/
 .skillsContainer {
@@ -395,25 +443,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  .aboutMe-img {
-    border-radius: 50px;
-  }
-
-  .aboutMe-title {
-    margin: 20px 0 30px 0;
-    font-size: var(--text-bigger);
-    font-weight: var(--text-bold);
-    color: var(--title);
-  }
+  gap: 30px;
 
   .aboutMe-infoSection {
     background-color: var(--container);
-    padding: 30px 20px;
     border-radius: 10px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    .aboutMe-img {
+      border-radius: 60px;
+      align-self: center;
+      margin-bottom: 10px;
+    }
 
     .aboutMe-infoSection-titlesContainer {
       display: flex;
@@ -430,31 +474,14 @@ body {
         h3 {
           color: var(--title);
           font-weight: var(--text-normal);
-          font-size: var(--text-medium);
+          font-size: var(--text-big);
         }
         p {
           color: var(--content);
           font-weight: var(--text-normal);
-          font-size: var(--text-smaller);
-        }
-      }
-
-      .aboutMe-infoSection-resumeButton {
-        background-color: var(--main);
-        border: none;
-        padding: 10px 20px;
-        border-radius: 50px;
-        transition: transform 0.3s ease;
-
-        &:hover {
-          background-color: var(--main-dark);
-          cursor: pointer;
-          transform: scale(1.1);
-        }
-
-        p {
-          font-size: var(--text-smaller);
-          color: var(--body);
+          font-size: var(--text-small);
+          line-height: 20px;
+          width: 80%;
         }
       }
     }
@@ -464,6 +491,26 @@ body {
       font-weight: var(--text-normal);
       font-size: var(--text-smaller);
       line-height: 18px;
+    }
+
+    .aboutMe-infoSection-resumeButton {
+      background-color: var(--main);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      margin-top: 10px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        background-color: var(--main-dark);
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      p {
+        font-size: var(--text-smaller);
+        color: var(--body);
+      }
     }
   }
 }
