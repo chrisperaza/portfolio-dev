@@ -7,13 +7,13 @@ const SkillsSection = () => {
     <div className='skillsContainer'>
       <section className='skillsSection'>
         <div>
-          <h3 className='skillsSection-title'>See my current skills</h3>
-          <p className='skillsSection-text'>And learning more...</p>
+          <h3 className='skillsSection-title'>My current skills</h3>
         </div>
-        <SkillsList itemsQuantity={6} />
-        <button className='skillsSection-button'>
+        <SkillsList itemsQuantity={7} />
+        <p className='skillsSection-text'>And learning more...</p>
+        {/** <button className='skillsSection-button'>
           <p>See more</p>
-        </button>
+        </button> **/}
       </section>
     </div>
   );
