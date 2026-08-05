@@ -6,6 +6,7 @@ import CheckMyGitHub from './CheckMyGitHub';
 import SkillsSection from './SkillsSection';
 import AboutMeSection from './AboutMeSection';
 import ContactMeSection from './ContactMeSection';
+import HorizontalLine from './HorizontalLine';
 // Import database
 import { featuredProjectsArray } from '../database/featuredProjects';
 import { otherProjectsArray } from '../database/otherProjectsArray';
@@ -14,7 +15,7 @@ const Main = () => {
   return (
     <main className='main'>
       <Banner />
-      <SkillsSection />
+      <HorizontalLine />
       <ProjectsSection
         title='Featured projects'
         description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others.'
@@ -28,8 +29,10 @@ const Main = () => {
         database={otherProjectsArray}
       />
       <CheckMyGitHub />
+      <SkillsSection />
       <AboutMeSection />
       <ContactMeSection />
+      <HorizontalLine />
     </main>
   );
 };
