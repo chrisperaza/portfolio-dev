@@ -159,6 +159,10 @@ body {
           border-radius: 50px;
           transition: transform 0.3s ease;
 
+          @media (min-width: 992px) {
+            padding: 12px 25px;
+          }
+
           &:hover {
             background-color: var(--main-dark);
             cursor: pointer;
@@ -195,6 +199,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  .horizontalLine {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
 }
 
 /*****************************/
@@ -202,13 +212,19 @@ body {
 /*****************************/
 .banner {
   width: 100%;
-  padding: 50px 20px 10px 20px;
+  padding: 50px 0 10px 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
 
+  @media (min-width: 992px) {
+    padding: 50px 0;
+  }
+
   .banner_section {
+    width: 90%;
+    max-width: 860px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -221,6 +237,10 @@ body {
 
     p {
       font-size: var(--text-small);
+
+      @media (min-width: 992px) {
+        font-size: 16px;
+      }
     }
 
     .banner_section-greetings {
@@ -234,8 +254,29 @@ body {
       width: 90%;
       line-height: 40px;
 
+      @media (min-width: 992px) {
+        display: none;
+      }
+
       .banner_section-titleName {
         color: var(--title);
+      }
+    }
+
+    .banner_section-title2 {
+      display: none;
+
+      @media (min-width: 992px) {
+        display: block;
+        font-size: 50px;
+        font-weight: var(--text-bolder);
+        color: var(--content);
+        width: 90%;
+        line-height: 60px;
+
+        .banner_section-titleName {
+          color: var(--title);
+        }
       }
     }
 
@@ -244,6 +285,11 @@ body {
       line-height: 22px;
       width: 90%;
       margin: 10px 0;
+      max-width: 530px;
+
+      @media (min-width: 992px) {
+        line-height: 26px;
+      }
     }
   }
 
@@ -255,12 +301,20 @@ body {
     justify-content: center;
     align-items: center;
 
+    @media (min-width: 992px) {
+      gap: 30px;
+    }
+
     .banner_buttons-talk {
       background-color: var(--main);
       border: none;
       padding: 10px 20px;
       border-radius: 50px;
       transition: transform 0.3s ease;
+
+      @media (min-width: 992px) {
+        padding: 12px 25px;
+      }
 
       &:hover {
         background-color: var(--main-dark);
@@ -271,6 +325,10 @@ body {
       p {
         font-size: var(--text-smaller);
         color: var(--body);
+
+        @media (min-width: 992px) {
+          font-size: 16px;
+        }
       }
     }
 
@@ -282,10 +340,18 @@ body {
       gap: 5px;
       padding: 10px 0;
 
+      @media (min-width: 992px) {
+        gap: 10px;
+      }
+
       p {
         font-size: var(--text-smaller);
         color: var(--main);
         transition: transform 0.3s ease;
+
+        @media (min-width: 992px) {
+          font-size: 16px;
+        }
       }
 
       .arrowRightIcon {
