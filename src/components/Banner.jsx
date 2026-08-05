@@ -8,10 +8,11 @@ const Banner = () => {
     <div className='banner'>
       <section className='banner_section'>
         <p className='banner_section-greetings'>Hi! My name is</p>
-        <h2 className='banner_section-title'>
-          <span className='banner_section-titleName'>Christian Peraza. </span>
-          I'm a Full-stack JavaScript Developer.
-        </h2>
+        <h1 className='banner_section-title'>
+          <span className='banner_section-titleName'>Christian Peraza, </span>{' '}
+          <br />
+          and I'm a Full-stack JavaScript Developer.
+        </h1>
         <p className='banner_section-text'>
           As a current student at BYU - Idaho, and a future Software Engineer, I
           am passionate about imagining, designing and developing exceptional
