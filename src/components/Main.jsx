@@ -2,6 +2,7 @@
 // Import components
 import Banner from './Banner';
 import ProjectsSection from './ProjectsSection';
+import CheckMyGitHub from './CheckMyGitHub';
 import SkillsSection from './SkillsSection';
 import AboutMeSection from './AboutMeSection';
 import ContactMeSection from './ContactMeSection';
@@ -13,6 +14,7 @@ const Main = () => {
   return (
     <main className='main'>
       <Banner />
+      <SkillsSection />
       <ProjectsSection
         title='Featured projects'
         description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others.'
@@ -25,7 +27,7 @@ const Main = () => {
         itemsQuantity={6}
         database={otherProjectsArray}
       />
-      <SkillsSection />
+      <CheckMyGitHub />
       <AboutMeSection />
       <ContactMeSection />
     </main>
