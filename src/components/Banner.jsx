@@ -9,9 +9,12 @@ const Banner = () => {
       <section className='banner_section'>
         <p className='banner_section-greetings'>Hi! My name is</p>
         <h1 className='banner_section-title'>
-          <span className='banner_section-titleName'>Christian Peraza, </span>{' '}
-          <br />
+          <span className='banner_section-titleName'>Christian Peraza, </span>
           and I'm a Full-stack JavaScript Developer.
+        </h1>
+        <h1 className='banner_section-title2'>
+          <span className='banner_section-titleName'>Christian Peraza, </span>
+          and I'm a <br /> Full-stack JavaScript Developer.
         </h1>
         <p className='banner_section-text'>
           As a current student at BYU - Idaho, and a future Software Engineer, I
@@ -26,7 +29,10 @@ const Banner = () => {
         <button className='banner_buttons-projects'>
           <p>Check out my projects</p>
           <div>
-            <FontAwesomeIcon className='arrowRightIcon' icon={faArrowRight} />
+            <FontAwesomeIcon
+              className='arrowRightIcon fa-lg'
+              icon={faArrowRight}
+            />
           </div>
         </button>
       </div>
