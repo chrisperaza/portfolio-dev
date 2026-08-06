@@ -13,19 +13,24 @@ const router = express();
 
 // Main route
 router.get('/', (req, res) => {
-  res.send('Hello, world!');
+  res.send(
+    'Get only the following endpoints: /api/, /api/featuredProjects, /api/otherProjects, /api/skills, /api/socialMedia',
+  );
+});
+router.get('/api/', (req, res) => {
+  res.send('Main endpoint');
 });
 
 // Featured projects route
-router.get('/featuredProjects', getFeatureProjects);
+router.get('/api/featuredProjects', getFeatureProjects);
 
 // Other projects route
-router.get('/otherProjects', getOtherProjects);
+router.get('/api/otherProjects', getOtherProjects);
 
 // Skills route
-router.get('/skills', getSkills);
+router.get('/api/skills', getSkills);
 
 // Social media route
-router.get('/socialMedia', getSocialMedia);
+router.get('/api/socialMedia', getSocialMedia);
 
 export default router;
