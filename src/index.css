@@ -890,15 +890,18 @@ body {
 /*****************************/
 .contactMe-container {
   width: 100%;
-  padding: 30px 20px;
+  padding: 30px 0;
+  justify-items: center;
 
   .contactMe-section {
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
 
     .contactMe-titles {
+      max-width: 600px;
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -913,6 +916,10 @@ body {
         font-size: var(--text-bigger);
         font-weight: var(--text-bold);
         color: var(--title);
+
+        @media (min-width: 992px) {
+          font-size: 45px;
+        }
       }
 
       p {
@@ -920,6 +927,11 @@ body {
         font-size: var(--text-small);
         width: 90%;
         line-height: 20px;
+
+        @media (min-width: 992px) {
+          font-size: 16px;
+          line-height: 26px;
+        }
       }
     }
 
@@ -930,6 +942,10 @@ body {
       border-radius: 50px;
       transition: transform 0.3s ease;
 
+      @media (min-width: 992px) {
+        padding: 12px 25px;
+      }
+
       &:hover {
         background-color: var(--main-dark);
         cursor: pointer;
@@ -939,6 +955,10 @@ body {
       p {
         font-size: var(--text-smaller);
         color: var(--body);
+
+        @media (min-width: 992px) {
+          font-size: 16px;
+        }
       }
     }
   }
