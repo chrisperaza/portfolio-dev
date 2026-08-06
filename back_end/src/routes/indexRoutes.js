@@ -5,6 +5,13 @@ import { featuredProjectsArray } from '../../../front_end/src/database/featuredP
 import { otherProjectsArray } from '../../../front_end/src/database/otherProjectsArray.js';
 import { skillsArray } from '../../../front_end/src/database/skillsArray.js';
 import { socialMediaArray } from '../../../front_end/src/database/socialMediaArray.js';
+// Import constrollers
+import {
+  getFeatureProjects,
+  getOtherProjects,
+  getSkills,
+  getSocialMedia,
+} from '../controllers/indexControllers.js';
 
 // Create router
 const router = express();
@@ -15,23 +22,15 @@ router.get('/', (req, res) => {
 });
 
 // Featured projects route
-router.get('/featuredProjects', (req, res) => {
-  res.send(featuredProjectsArray);
-});
+router.get('/featuredProjects', getFeatureProjects);
 
 // Other projects route
-router.get('/otherProjects', (req, res) => {
-  res.send(otherProjectsArray);
-});
+router.get('/otherProjects', getOtherProjects);
 
 // Skills route
-router.get('/skills', (req, res) => {
-  res.send(skillsArray);
-});
+router.get('/skills', getSkills);
 
 // Social media route
-router.get('/socialMedia', (req, res) => {
-  res.send(socialMediaArray);
-});
+router.get('/socialMedia', getSocialMedia);
 
 export default router;
