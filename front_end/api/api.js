@@ -1,8 +1,10 @@
 // Dependencies
 import axios from 'axios';
 
+const NODE_ENV = import.meta.env.MODE;
+
 // API url
-const URL = 'http://localhost:3000/api';
+const URL = NODE_ENV === 'development' ? 'http://localhost:3000/api' : '/api';
 
 // Response
 const featuredProjectsResponse = await axios.get(`${URL}/featuredProjects`);
