@@ -439,12 +439,16 @@ body {
       .projectsSection-item {
         background-color: var(--container);
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         gap: 20px;
         justify-content: space-between;
         transition: background-color 0.3s ease;
+
+        @media (min-width: 992px) {
+          border-radius: 25px;
+        }
 
         &:hover {
           cursor: pointer;
@@ -694,82 +698,164 @@ body {
 /*****************************/
 .aboutMe-section {
   width: 100%;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 
+  @media (min-width: 992px) {
+    padding: 30px 0;
+  }
+
   .aboutMe-infoSection {
+    width: 90%;
+    max-width: 1200px;
     background-color: var(--container);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+      padding: 60px;
+      justify-content: space-between;
+      border-radius: 30px;
+    }
 
     .aboutMe-img {
       border-radius: 60px;
       align-self: center;
+
+      @media (min-width: 992px) {
+        align-self: flex-start;
+        width: 20%;
+        border-radius: 100%;
+      }
     }
 
-    .aboutMe-infoSection-titlesContainer {
+    div {
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      gap: 15px;
+      flex-direction: column;
+      gap: 25px;
 
-      div {
+      @media (min-width: 992px) {
+        width: 73%;
+        gap: 30px;
+      }
+
+      .aboutMe-infoSection-titlesContainer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        text-align: center;
-        gap: 5px;
+        gap: 15px;
+        justify-content: center;
 
-        h3 {
-          color: var(--title);
-          font-weight: var(--text-normal);
-          font-size: var(--text-big);
+        @media (min-width: 992px) {
+          width: 100%;
+          justify-content: flex-start;
+          margin-bottom: 10px;
         }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 15px;
+
+          @media (min-width: 992px) {
+            width: 100%;
+            text-align: start;
+            align-items: flex-start;
+            gap: 18px;
+          }
+
+          h3 {
+            color: var(--content);
+            font-weight: var(--text-bold);
+            font-size: var(--text-medium);
+
+            @media (min-width: 992px) {
+              font-size: 18px;
+            }
+          }
+          p {
+            color: var(--title);
+            font-weight: var(--text-normal);
+            font-size: var(--text-big);
+            line-height: 30px;
+            width: 100%;
+
+            @media (min-width: 992px) {
+              font-size: 45px;
+              font-weight: var(--text-normal);
+              line-height: 55px;
+            }
+          }
+        }
+      }
+
+      .aboutMe-infoSection-text {
+        color: var(--content);
+        font-weight: var(--text-normal);
+        font-size: var(--text-small);
+        line-height: 20px;
+
+        @media (min-width: 992px) {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+
+      .socialMedia-list {
+        margin-top: 10px;
+
+        @media (min-width: 992px) {
+          gap: 18px;
+        }
+
+        .socialMedia-item {
+          a {
+            .socialMedia-icon {
+              @media (min-width: 992px) {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+
+      .aboutMe-infoSection-resumeButton {
+        background-color: var(--main);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-top: 10px;
+        transition: transform 0.3s ease;
+
+        @media (min-width: 992px) {
+          width: fit-content;
+          padding: 15px 28px;
+          margin-top: 15px;
+        }
+
+        &:hover {
+          background-color: var(--main-dark);
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+
         p {
-          color: var(--content);
-          font-weight: var(--text-normal);
-          font-size: var(--text-small);
-          line-height: 20px;
-          width: 80%;
+          font-size: var(--text-smaller);
+          color: var(--body);
+
+          @media (min-width: 992px) {
+            font-size: 16px;
+          }
         }
-      }
-    }
-
-    .aboutMe-infoSection-text {
-      color: var(--content);
-      font-weight: var(--text-normal);
-      font-size: var(--text-small);
-      line-height: 20px;
-    }
-
-    .socialMedia-list {
-      margin-top: 10px;
-    }
-
-    .aboutMe-infoSection-resumeButton {
-      background-color: var(--main);
-      border: none;
-      padding: 10px 20px;
-      border-radius: 50px;
-      margin-top: 10px;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        background-color: var(--main-dark);
-        cursor: pointer;
-        transform: scale(1.1);
-      }
-
-      p {
-        font-size: var(--text-smaller);
-        color: var(--body);
       }
     }
   }
