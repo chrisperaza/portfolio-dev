@@ -14,7 +14,7 @@ const ProjectsList = ({ itemsQuantity, database }) => {
             description={currentValue.description}
             repoLink={currentValue.repoLink}
             demoLink={currentValue.demoLink}
-            key={currentValue.id}
+            key={currentValue._id}
           />
         ))}
     </ul>

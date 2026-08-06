@@ -12,7 +12,7 @@ const SkillsList = ({ itemsQuantity }) => {
           <SkillsItem
             nameSkill={currentValue.name}
             icon={currentValue.icon}
-            key={currentValue.id}
+            key={currentValue._id}
           />
         ))}
     </ul>
