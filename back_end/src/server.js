@@ -1,11 +1,12 @@
 // Dependencies
 import express from 'express';
+import dotenv from 'dotenv/config';
 // Routes
 import indexRoutes from './routes/indexRoutes.js';
 
 // Define variables
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Use index endpoints
 app.use('/', indexRoutes);
