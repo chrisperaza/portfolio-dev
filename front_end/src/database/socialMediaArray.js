@@ -1,4 +1,4 @@
-export const socialMediaArray = [
+/* export const socialMediaArray = [
   {
     id: 1,
     name: 'GitHub',
@@ -23,4 +23,8 @@ export const socialMediaArray = [
     link: 'mailto:christianperaza2000@gmail.com',
     title: 'Get in touch for collabs',
   },
-];
+]; */
+
+import { socialMediaArray } from '../../api/api.js';
+
+export { socialMediaArray };

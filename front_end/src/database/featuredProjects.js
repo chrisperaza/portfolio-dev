@@ -1,4 +1,4 @@
-export const featuredProjectsArray = [
+/* export const featuredProjectsArray = [
   {
     id: 1,
     image:
@@ -79,4 +79,8 @@ export const featuredProjectsArray = [
     repoLink: 'https://github.com/chrisperaza/image-gallery',
     demoLink: 'https://image-gallery-challenge.netlify.app/',
   },
-];
+]; */
+
+import { featuredProjectsArray } from '../../api/api.js';
+
+export { featuredProjectsArray };

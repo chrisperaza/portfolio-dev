@@ -1,4 +1,4 @@
-export const otherProjectsArray = [
+/* export const otherProjectsArray = [
   {
     id: 1,
     image:
@@ -96,3 +96,8 @@ export const otherProjectsArray = [
     demoLink: '#',
   },
 ];
+ */
+
+import { otherProjectsArray } from '../../api/api.js';
+
+export { otherProjectsArray };

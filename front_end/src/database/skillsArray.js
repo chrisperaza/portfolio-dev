@@ -1,4 +1,4 @@
-export const skillsArray = [
+/* export const skillsArray = [
   {
     id: 1,
     name: 'JavaScript',
@@ -34,4 +34,8 @@ export const skillsArray = [
     name: 'Git',
     icon: 'https://res.cloudinary.com/dx29auvvm/image/upload/v1785347058/git-icon_ensrlg.svg',
   },
-];
+]; */
+
+import { skillsArray } from '../../api/api.js';
+
+export { skillsArray };
