@@ -1,10 +1,5 @@
 // Dependencies
 import express from 'express';
-// Local database
-import { featuredProjectsArray } from '../../../front_end/src/database/featuredProjects.js';
-import { otherProjectsArray } from '../../../front_end/src/database/otherProjectsArray.js';
-import { skillsArray } from '../../../front_end/src/database/skillsArray.js';
-import { socialMediaArray } from '../../../front_end/src/database/socialMediaArray.js';
 // Import constrollers
 import {
   getFeatureProjects,
