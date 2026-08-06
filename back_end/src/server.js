@@ -1,6 +1,5 @@
 // Dependencies
 import express from 'express';
-import dotenv from 'dotenv/config';
 import cors from 'cors';
 import path from 'path';
 // Routes
@@ -8,7 +7,7 @@ import indexRoutes from './routes/indexRoutes.js';
 
 // Define variables
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 const __dirname = path.resolve();
 
