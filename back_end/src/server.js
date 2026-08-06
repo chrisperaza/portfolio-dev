@@ -2,6 +2,7 @@
 import express from 'express';
 import dotenv from 'dotenv/config';
 import cors from 'cors';
+import path from 'path';
 // Routes
 import indexRoutes from './routes/indexRoutes.js';
 
@@ -9,9 +10,17 @@ import indexRoutes from './routes/indexRoutes.js';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const __dirname = path.resolve();
+
 // Use index endpoints
 app.use(cors());
 app.use('/', indexRoutes);
+
+// If the endpoint is wrong
+app.use(express.static(path.join(__dirname, '../front_end/dist')));
+app.get('/*splat', async (req, res) => {
+  res.sendFile(path.join(__dirname, '../front_end/dist/index.html'));
+});
 
 // Server listening
 app.listen(PORT, () => {
