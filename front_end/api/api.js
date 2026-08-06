@@ -1,10 +1,8 @@
 // Dependencies
 import axios from 'axios';
 
-const NODE_ENV = import.meta.env.MODE;
-
 // API url
-const URL = NODE_ENV === 'development' ? 'http://localhost:3000/api' : '/api';
+const URL = 'https://portfolio-dev-l5fq.onrender.com/api';
 
 // Response
 const featuredProjectsResponse = await axios.get(`${URL}/featuredProjects`);
