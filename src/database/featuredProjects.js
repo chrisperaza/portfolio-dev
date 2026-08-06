@@ -3,7 +3,7 @@ export const featuredProjectsArray = [
     id: 1,
     image:
       'https://res.cloudinary.com/dx29auvvm/image/upload/v1785814603/spotify-clone-portfolio-cover_iqauum.png',
-    title: 'Spotify Clone - MERN Stack App',
+    title: 'Spotify Clone - MERN Stack',
     techs: [
       {
         name: 'React',
@@ -31,7 +31,7 @@ export const featuredProjectsArray = [
     id: 2,
     image:
       'https://res.cloudinary.com/dx29auvvm/image/upload/v1785814603/movie-finder-portfolio-cover_f1xxat.png',
-    title: 'Movie Finder - JS Vanilla App',
+    title: 'Movie Finder - JS Vanilla',
     techs: [
       {
         name: 'HTML5',
@@ -51,7 +51,7 @@ export const featuredProjectsArray = [
       },
     ],
     description:
-      'Interactive web catalog for exploring movies and viewing their descriptions, release dates, and ratings in real-time. Built without frameworks to demonstrate mastery of web development fundamentals, DOM manipulation, and REST API consumption.',
+      'Interactive web catalog for exploring movies and viewing their descriptions, release dates, and ratings in real-time.',
     repoLink: 'https://github.com/chrisperaza/movie_app_wdd330_final_project',
     demoLink: 'https://movie-app-wdd330-final-project.netlify.app/',
   },
@@ -59,7 +59,7 @@ export const featuredProjectsArray = [
     id: 3,
     image:
       'https://res.cloudinary.com/dx29auvvm/image/upload/v1785814603/image-gallery-portfolio-cover_tar5ry.png',
-    title: 'Image Gallery - React App',
+    title: 'Image Gallery - React',
     techs: [
       {
         name: 'React',
@@ -75,7 +75,7 @@ export const featuredProjectsArray = [
       },
     ],
     description:
-      'Image gallery that connects to an external API to search for and display high-quality images based on keywords. It features a responsive interface, loading states, and an optimized display.',
+      'Image gallery that connects to an external API to search for and display high-quality images based on keywords.',
     repoLink: 'https://github.com/chrisperaza/image-gallery',
     demoLink: 'https://image-gallery-challenge.netlify.app/',
   },
