@@ -1,14 +1,14 @@
-// Import dependencies
+// Dependencies
 import express from 'express';
+// Routes
+import indexRoutes from './routes/indexRoutes.js';
 
 // Define variables
 const app = express();
 const PORT = 3000;
 
-// Get
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
+// Use index endpoints
+app.use('/', indexRoutes);
 
 // Server listening
 app.listen(PORT, () => {
