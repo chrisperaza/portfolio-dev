@@ -12,11 +12,6 @@ import {
 const router = express();
 
 // Main route
-router.get('/', (req, res) => {
-  res.send(
-    'Get only the following endpoints: /api/, /api/featuredProjects, /api/otherProjects, /api/skills, /api/socialMedia',
-  );
-});
 router.get('/api/', (req, res) => {
   res.send('Main endpoint');
 });
