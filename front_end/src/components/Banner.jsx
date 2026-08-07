@@ -1,7 +1,9 @@
 // import React from 'react'
-// Import icons
+// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+// React router
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
@@ -27,13 +29,15 @@ const Banner = () => {
           <p>Let's talk</p>
         </button>
         <button className='banner_buttons-projects'>
-          <p>Check out my projects</p>
-          <div>
-            <FontAwesomeIcon
-              className='arrowRightIcon fa-lg'
-              icon={faArrowRight}
-            />
-          </div>
+          <Link to={'/projects'} title='Projects'>
+            <p>Check out my projects</p>
+            <div>
+              <FontAwesomeIcon
+                className='arrowRightIcon fa-lg'
+                icon={faArrowRight}
+              />
+            </div>
+          </Link>
         </button>
       </div>
     </div>
