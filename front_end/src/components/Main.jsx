@@ -2,10 +2,6 @@
 // Import components
 import Banner from './Banner';
 import ProjectsSection from './ProjectsSection';
-import CheckMyGitHub from './CheckMyGitHub';
-import SkillsSection from './SkillsSection';
-import AboutMeSection from './AboutMeSection';
-import ContactMeSection from './ContactMeSection';
 import HorizontalLine from './HorizontalLine';
 // Import database
 import { featuredProjectsArray } from '../database/featuredProjects';
@@ -28,11 +24,6 @@ const Main = () => {
         itemsQuantity={6}
         database={otherProjectsArray}
       />
-      <CheckMyGitHub />
-      <SkillsSection />
-      <AboutMeSection />
-      <ContactMeSection />
-      <HorizontalLine />
     </main>
   );
 };
