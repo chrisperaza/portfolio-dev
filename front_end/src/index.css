@@ -73,6 +73,17 @@ body {
 }
 
 /*****************************/
+/*** ALL PROJECTS HORIZONTAL LINE ***/
+/*****************************/
+.allProjectsHrLine {
+  width: 90%;
+  max-width: 992px;
+  height: 0;
+  align-self: center;
+  border: solid 1px var(--container);
+}
+
+/*****************************/
 /*** HEADER ***/
 /*****************************/
 .header {
@@ -522,6 +533,48 @@ body {
 }
 
 /*****************************/
+/*** ALL PROJECTS BUTTON ***/
+/*****************************/
+.allProjectsLink {
+  text-decoration-line: none;
+  color: var(--body);
+  align-self: center;
+  margin: 20px 0;
+
+  @media (min-width: 992px) {
+    margin: 30px 0;
+  }
+
+  .allProjectsButton {
+    width: 300px;
+    background-color: var(--main);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+
+    @media (min-width: 992px) {
+      padding: 15px 25px;
+      width: 400px;
+    }
+
+    &:hover {
+      background-color: var(--main-dark);
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    p {
+      font-size: var(--text-small);
+
+      @media (min-width: 992px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/*****************************/
 /*** CHECK MY GITHUB SECTION ***/
 /*****************************/
 .checkMyGithub-container {
@@ -538,7 +591,7 @@ body {
     align-items: center;
 
     @media (min-width: 992px) {
-      padding: 20px 0 0 0;
+      padding: 20px 0;
     }
 
     .socialMedia-icon {
@@ -601,14 +654,14 @@ body {
     max-width: 900px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
     /** background-color: var(--container); **/
-    padding: 0 0 40px 0;
+    padding: 20px 0 40px 0;
     border-radius: 10px;
 
     @media (min-width: 992px) {
-      gap: 40px;
+      gap: 60px;
       padding: 40px 0;
     }
 
@@ -623,12 +676,12 @@ body {
       }
 
       .skillsSection-title {
-        font-weight: var(--text-normal);
-        font-size: var(--text-medium);
+        font-size: var(--text-bigger);
+        font-weight: var(--text-bold);
         color: var(--title);
 
         @media (min-width: 992px) {
-          font-size: 40px;
+          font-size: 45px;
         }
       }
     }
@@ -636,7 +689,7 @@ body {
     .skillsSection-list {
       display: flex;
       flex-direction: row;
-      gap: 12px;
+      gap: 15px;
       list-style: none;
       align-items: center;
 
@@ -646,7 +699,7 @@ body {
 
       li {
         @media (min-width: 992px) {
-          width: 50px;
+          width: 60px;
           display: flex;
           justify-content: center;
         }
@@ -661,12 +714,13 @@ body {
     }
 
     .skillsSection-text {
-      font-weight: var(--text-bold);
-      font-size: var(--text-smaller);
       color: var(--main);
+      font-weight: var(--text-bold);
+      font-size: var(--text-small);
+      line-height: 20px;
 
       @media (min-width: 992px) {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 26px;
       }
     }
