@@ -63,6 +63,7 @@ Both pages share the following elements, which are dynamically generated as comp
 - **axios**: to consume the API from the frontend
 - **react-router-dom**: for route handling
 - **FontAwesome**: for importing modern icons
+- **Render**: for deploying the portfolio website
 - **Git**: as a version control tool to add and commit changes, maintaining a history of them
 - And **JavaScript**: as the primary development language
 
@@ -74,6 +75,7 @@ Both pages share the following elements, which are dynamically generated as comp
 - [React Props](https://www.w3schools.com/react/react_props.asp)
 - [React Router](https://www.w3schools.com/react/react_router.asp)
 - [Set Up with React | Font Awesome](https://docs.fontawesome.com/web/use-with/react/)
+- [Deploying on Render](https://render.com/docs/deploys)
 
 ## Future Work
 
