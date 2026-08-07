@@ -34,7 +34,7 @@ npm run dev
 
 ▶️ **Video demo:**
 
-[Portfolio Video Demo](http://youtube.link.goes.here)
+[Portfolio Video Demo](https://youtu.be/3MZY8ECfb38)
 
 ## Web Pages
 
