@@ -96,11 +96,12 @@ body {
       padding-top: 30px;
     }
 
-    div {
+    a {
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 15px;
+      text-decoration-line: none;
 
       .profilePhoto-small {
         border-radius: 100%;
@@ -335,41 +336,45 @@ body {
     .banner_buttons-projects {
       background-color: transparent;
       border: none;
-      display: flex;
-      flex-direction: row;
-      gap: 5px;
-      padding: 10px 0;
 
       @media (min-width: 992px) {
         gap: 10px;
       }
 
-      p {
-        font-size: var(--text-smaller);
-        color: var(--main);
-        transition: transform 0.3s ease;
-
-        @media (min-width: 992px) {
-          font-size: 16px;
-        }
-      }
-
-      .arrowRightIcon {
-        color: var(--main);
-        justify-content: center;
-        transition: transform 0.3s ease;
-      }
-
-      &:hover {
-        cursor: pointer;
+      a {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        padding: 10px 0;
+        text-decoration-line: none;
 
         p {
-          color: var(--main-dark);
+          font-size: var(--text-smaller);
+          color: var(--main);
+          transition: transform 0.3s ease;
+
+          @media (min-width: 992px) {
+            font-size: 16px;
+          }
         }
 
         .arrowRightIcon {
-          color: var(--main-dark);
-          transform: translateX(6px);
+          color: var(--main);
+          justify-content: center;
+          transition: transform 0.3s ease;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          p {
+            color: var(--main-dark);
+          }
+
+          .arrowRightIcon {
+            color: var(--main-dark);
+            transform: translateX(6px);
+          }
         }
       }
     }
