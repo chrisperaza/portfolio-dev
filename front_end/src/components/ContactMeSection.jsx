@@ -2,7 +2,7 @@
 
 const ContactMeSection = () => {
   return (
-    <div className='contactMe-container'>
+    <div className='contactMe-container' id='contact'>
       <section className='contactMe-section'>
         <div className='contactMe-titles'>
           <h2>Let's talk!</h2>

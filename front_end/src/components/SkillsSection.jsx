@@ -4,7 +4,7 @@ import SkillsList from './SkillsList';
 
 const SkillsSection = () => {
   return (
-    <div className='skillsContainer'>
+    <div className='skillsContainer' id='skills'>
       <section className='skillsSection'>
         <div>
           <h3 className='skillsSection-title'>My current skills</h3>

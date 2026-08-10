@@ -6,7 +6,7 @@ import SocialMediaList from './SocialMediaList';
 
 const AboutMeSection = () => {
   return (
-    <section className='aboutMe-section'>
+    <section className='aboutMe-section' id='aboutMe'>
       <section className='aboutMe-infoSection'>
         <img
           className='aboutMe-img'
