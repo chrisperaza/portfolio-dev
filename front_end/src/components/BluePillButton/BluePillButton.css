@@ -1,0 +1,29 @@
+/*****************************/
+/*** BLUE PILL BUTTON ***/
+/*****************************/
+.bluePillButton {
+  background-color: var(--main);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+
+  @media (min-width: 992px) {
+    padding: 12px 30px;
+  }
+
+  &:hover {
+    background-color: var(--main-dark);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  p {
+    font-size: var(--text-small);
+    color: var(--body);
+
+    @media (min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+}
