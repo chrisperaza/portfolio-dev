@@ -1,0 +1,112 @@
+/*****************************/
+/*** HEADER ***/
+/*****************************/
+.header {
+  width: 100%;
+  border-bottom: solid 0.5px var(--border);
+  position: sticky;
+  top: 0;
+  background-color: var(--body);
+  justify-items: center;
+
+  @media (min-width: 992px) {
+    border: none;
+    position: initial;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    padding: 18px 0;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+
+    @media (min-width: 992px) {
+      padding-top: 30px;
+    }
+
+    .logoLink {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      text-decoration-line: none;
+
+      /* Background hover */
+      margin: -10px -20px -10px -12px;
+      padding: 10px 20px 10px 12px;
+      border-radius: 50px;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: var(--container);
+      }
+
+      @media (min-width: 992px) {
+        gap: 15px;
+      }
+
+      .profilePhoto-small {
+        border-radius: 100%;
+        width: 40px;
+
+        @media (min-width: 992px) {
+          width: 50px;
+        }
+      }
+
+      p {
+        color: var(--title);
+        font-size: var(--text-medium);
+        font-weight: var(--text-bolder);
+
+        span {
+          color: var(--content);
+        }
+      }
+    }
+
+    .nav {
+      display: none;
+
+      @media (min-width: 992px) {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+
+        .navList {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+
+          .navItem {
+            a {
+              font-size: 16px;
+              color: var(--content);
+              text-decoration-line: none;
+              transition: color 0.3s ease;
+
+              &:hover {
+                cursor: pointer;
+                color: var(--main);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .burgerMenu-icon {
+      color: var(--content);
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}
