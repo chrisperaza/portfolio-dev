@@ -1,25 +1,24 @@
-// import React from 'react'
+// Components
+import BluePillButton from './BluePillButton/BluePillButton';
 
 const Navigation = () => {
   return (
     <nav className='nav'>
       <ul className='navList'>
         <li className='navItem'>
-          <a href='#'>Projects</a>
+          <a href='#projects'>Projects</a>
         </li>
         <li className='navItem'>
-          <a href='#'>Skills</a>
+          <a href='#skills'>Skills</a>
         </li>
         <li className='navItem'>
-          <a href='#'>About me</a>
+          <a href='#aboutMe'>About me</a>
         </li>
         <li className='navItem'>
-          <a href='#'>Contact</a>
+          <a href='#contact'>Contact</a>
         </li>
       </ul>
-      <button className='navButton'>
-        <p>Resume</p>
-      </button>
+      <BluePillButton text='Resume' title='Download my Resume' />
     </nav>
   );
 };
