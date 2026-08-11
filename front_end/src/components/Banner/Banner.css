@@ -1,0 +1,188 @@
+/*****************************/
+/*** BANNER ***/
+/*****************************/
+.banner {
+  width: 100%;
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  @media (min-width: 992px) {
+    padding: 35px 0;
+  }
+
+  .bannerSection {
+    width: 90%;
+    max-width: 992px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+
+    @media (min-width: 992px) {
+      gap: 30px;
+    }
+
+    p,
+    h2 {
+      text-align: center;
+    }
+
+    .bannerGreetings {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      @media (min-width: 992px) {
+        gap: 5px;
+        flex-direction: row;
+      }
+
+      p {
+        font-size: var(--text-small);
+        font-weight: var(--text-bold);
+
+        @media (min-width: 992px) {
+          font-size: 18px;
+        }
+      }
+
+      .bannerGreetings-introduce {
+        color: var(--main);
+
+        @media (min-width: 992px) {
+          color: var(--title);
+        }
+      }
+
+      .bannerGreetings-major {
+        color: var(--content);
+      }
+    }
+
+    .bannerTexts {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+
+      @media (min-width: 992px) {
+        gap: 25px;
+      }
+
+      .bannerTexts-title {
+        font-size: var(--text-muchBigger);
+        font-weight: var(--text-normal);
+        color: var(--title);
+        width: 100%;
+        line-height: 45px;
+
+        @media (min-width: 992px) {
+          font-size: 65px;
+          line-height: 80px;
+        }
+
+        .bannerTexts-title-gray {
+          color: var(--content);
+        }
+      }
+
+      .bannerTexts-paragraph {
+        font-size: var(--text-small);
+        font-weight: var(--text-normal);
+        color: var(--content);
+        line-height: 22px;
+        width: 70%;
+        max-width: 600px;
+
+        @media (min-width: 992px) {
+          line-height: 28px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .bannerButtons {
+      width: 100%;
+      max-width: 450px;
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: 992px) {
+        gap: 40px;
+        flex-direction: row;
+      }
+
+      .bluePillButton {
+        width: 80%;
+
+        @media (min-width: 992px) {
+          width: auto;
+          padding: 15px 30px;
+        }
+
+        p {
+          @media (min-width: 992px) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .banner_buttons-projects {
+        background-color: transparent;
+        border: none;
+
+        a {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          padding: 10px 0;
+          text-decoration-line: none;
+
+          @media (min-width: 992px) {
+            gap: 10px;
+          }
+
+          p {
+            font-size: var(--text-small);
+            color: var(--main);
+            transition: transform 0.3s ease;
+
+            @media (min-width: 992px) {
+              font-size: 18px;
+            }
+          }
+
+          .arrowRightIcon {
+            color: var(--main);
+            justify-content: center;
+            transition: transform 0.3s ease;
+
+            @media (min-width: 992px) {
+              font-size: 22px;
+            }
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            p {
+              color: var(--main-dark);
+            }
+
+            .arrowRightIcon {
+              color: var(--main-dark);
+              transform: translateX(6px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
