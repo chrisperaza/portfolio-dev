@@ -58,7 +58,7 @@
         }
       }
 
-      p {
+      h1 {
         color: var(--title);
         font-size: var(--text-medium);
         font-weight: var(--text-bolder);

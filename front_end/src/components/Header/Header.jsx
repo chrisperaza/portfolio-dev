@@ -20,9 +20,9 @@ const Header = () => {
             src={christianPhoto}
             alt='Profile photo of Christian Peraza smiling, wearing a white shirt and dark green tie, with a blurred nature background.'
           />
-          <p>
+          <h1>
             chris<span>peraza</span>
-          </p>
+          </h1>
         </Link>
         <Navigation />
         <FontAwesomeIcon className='burgerMenu-icon fa-lg' icon={faBars} />
