@@ -1,6 +1,6 @@
 // import React from 'react'
 // Components
-import Banner from './Banner';
+import Banner from './Banner/Banner';
 import ProjectsSection from './ProjectsSection';
 import SkillsSection from './SkillsSection';
 import AboutMeSection from './AboutMeSection';
@@ -16,7 +16,6 @@ const Main = () => {
   return (
     <main className='main'>
       <Banner />
-      <HorizontalLine />
       <ProjectsSection
         title='Featured projects'
         description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others.'
