@@ -18,7 +18,8 @@ const Banner = () => {
         </div>
         <section className='bannerTexts'>
           <h2 className='bannerTexts-title'>
-            I’m a Full-Stack JavaScript Developer focused on{' '}
+            <span className='bannerTexts-hideOnDesktop'>I’m a</span> Full-Stack
+            JavaScript Developer focused on{' '}
             <span className='bannerTexts-title-gray'>
               dynamic web applications
             </span>
