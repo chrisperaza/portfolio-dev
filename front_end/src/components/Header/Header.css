@@ -69,43 +69,16 @@
       }
     }
 
-    .nav {
-      display: none;
-
-      @media (min-width: 992px) {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        align-items: center;
-
-        .navList {
-          list-style: none;
-          display: flex;
-          flex-direction: row;
-          gap: 30px;
-
-          .navItem {
-            a {
-              font-size: 16px;
-              color: var(--content);
-              text-decoration-line: none;
-              transition: color 0.3s ease;
-
-              &:hover {
-                cursor: pointer;
-                color: var(--main);
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .burgerMenu-icon {
-      color: var(--content);
+    .buttonMenu {
+      background-color: transparent;
+      border: none;
 
       @media (min-width: 992px) {
         display: none;
+      }
+
+      .burgerMenu-icon {
+        color: var(--content);
       }
     }
   }
