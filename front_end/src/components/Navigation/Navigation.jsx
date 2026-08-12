@@ -1,9 +1,11 @@
 // Components
-import BluePillButton from './BluePillButton/BluePillButton';
+import BluePillButton from '../BluePillButton/BluePillButton';
+// Styles
+import './Navigation.css';
 
-const Navigation = () => {
+const Navigation = ({ showClass }) => {
   return (
-    <nav className='nav'>
+    <nav className={`nav ${showClass ? 'showOnMobile' : ''}`}>
       <ul className='navList'>
         <li className='navItem'>
           <a href='#projects'>Projects</a>
