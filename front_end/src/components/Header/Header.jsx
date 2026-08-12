@@ -1,16 +1,27 @@
+// Hooks
+import { useState } from 'react';
 // Images
 import christianPhoto from '../../assets/christianPeraza_photo.png';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 // Components
-import Navigation from '../Navigation';
+import Navigation from '../Navigation/Navigation';
 // React router
 import { Link } from 'react-router-dom';
 // Styles
 import './Header.css';
 
 const Header = () => {
+  const [showClass, setShowClass] = useState(false);
+
+  const toggleClass = () => {
+    setShowClass(!showClass);
+  };
+
+  // Toggle menu icon variable
+  const menuIcon = showClass ? faXmark : faBars;
+
   return (
     <header className='header'>
       <section>
@@ -24,8 +35,10 @@ const Header = () => {
             chris<span>peraza</span>
           </h1>
         </Link>
-        <Navigation />
-        <FontAwesomeIcon className='burgerMenu-icon fa-lg' icon={faBars} />
+        <Navigation showClass={showClass} />
+        <button className='buttonMenu' onClick={toggleClass}>
+          <FontAwesomeIcon className='burgerMenu-icon fa-lg' icon={menuIcon} />
+        </button>
       </section>
     </header>
   );
