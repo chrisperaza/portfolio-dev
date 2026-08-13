@@ -19,6 +19,7 @@
   }
 
   p {
+    font-weight: var(--text-bolder);
     font-size: var(--text-small);
     color: var(--body);
 

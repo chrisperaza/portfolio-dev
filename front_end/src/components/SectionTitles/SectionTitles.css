@@ -1,0 +1,40 @@
+.sectionTitles {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 0 25px;
+  max-width: 700px;
+
+  @media (min-width: 992px) {
+    padding: 20px 0 40px 0;
+    gap: 25px;
+  }
+
+  h3,
+  p {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: var(--text-bigger);
+    font-weight: var(--text-bold);
+    color: var(--title);
+
+    @media (min-width: 992px) {
+      font-size: 60px;
+    }
+  }
+
+  p {
+    color: var(--content);
+    font-weight: var(--text-normal);
+    font-size: var(--text-small);
+    line-height: 22px;
+
+    @media (min-width: 992px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}

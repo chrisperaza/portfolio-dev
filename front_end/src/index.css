@@ -26,7 +26,7 @@
   --inter: 'Inter', sans-serif;
   /* font size */
   --text-muchBigger: 40px;
-  --text-bigger: 25px;
+  --text-bigger: 30px;
   --text-big: 20px;
   --text-medium: 18px;
   --text-small: 14px;
@@ -102,183 +102,25 @@ body {
 }
 
 /*****************************/
-/*** PROJECTS SECTION ***/
-/*****************************/
-.projectsSection {
-  width: 100%;
-  justify-items: center;
-
-  div {
-    width: 90%;
-    max-width: 992px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-
-    .projectsSection-titles {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-      padding: 20px 25px;
-      max-width: 600px;
-
-      @media (min-width: 992px) {
-        padding: 20px 0 40px 0;
-      }
-
-      h2,
-      p {
-        text-align: center;
-      }
-
-      h2 {
-        font-size: var(--text-bigger);
-        font-weight: var(--text-bold);
-        color: var(--title);
-
-        @media (min-width: 992px) {
-          font-size: 45px;
-        }
-      }
-
-      p {
-        color: var(--content);
-        font-size: var(--text-small);
-        line-height: 20px;
-
-        @media (min-width: 992px) {
-          font-size: 16px;
-          line-height: 26px;
-        }
-      }
-    }
-
-    .projectsSection-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-
-      .projectsSection-item {
-        background-color: var(--container);
-        padding: 20px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        justify-content: space-between;
-        transition: background-color 0.3s ease;
-
-        @media (min-width: 992px) {
-          border-radius: 25px;
-        }
-
-        &:hover {
-          cursor: pointer;
-          background-color: #21374e;
-        }
-
-        .projectsSection-link {
-          text-decoration-line: none;
-
-          .projectsSection-linkContainer {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-
-            .projectImage {
-              width: 100%;
-              border-radius: 10px;
-            }
-
-            .projectTitles {
-              display: flex;
-              flex-direction: column;
-              gap: 10px;
-              align-items: flex-start;
-
-              h3 {
-                color: var(--title);
-                font-weight: var(--text-bold);
-                font-size: var(--text-medium);
-                line-height: 30px;
-              }
-              p {
-                color: var(--content);
-                font-weight: var(--text-normal);
-                font-size: var(--text-smaller);
-                line-height: 18px;
-              }
-            }
-          }
-        }
-
-        .project-linkList {
-          list-style: none;
-          display: flex;
-          flex-direction: row;
-          gap: 10px;
-
-          .project-linkItem {
-            .socialMedia-icon {
-              color: var(--content);
-              transition: transform 0.3s ease;
-            }
-            &:hover {
-              cursor: pointer;
-
-              .socialMedia-icon {
-                color: var(--main-dark);
-                transform: scale(1.1);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-/*****************************/
 /*** ALL PROJECTS BUTTON ***/
 /*****************************/
 .allProjectsLink {
+  width: 80%;
+  max-width: 400px;
   text-decoration-line: none;
   color: var(--body);
   align-self: center;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 
   @media (min-width: 992px) {
     margin: 30px 0;
   }
 
-  .allProjectsButton {
-    width: 300px;
-    background-color: var(--main);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 50px;
-    transition: transform 0.3s ease;
+  .bluePillButton {
+    width: 100%;
 
     @media (min-width: 992px) {
-      padding: 15px 25px;
-      width: 400px;
-    }
-
-    &:hover {
-      background-color: var(--main-dark);
-      cursor: pointer;
-      transform: scale(1.1);
-    }
-
-    p {
-      font-size: var(--text-small);
-
-      @media (min-width: 992px) {
-        font-size: 16px;
-      }
+      padding: 15px 35px;
     }
   }
 }
@@ -372,27 +214,6 @@ body {
     @media (min-width: 992px) {
       gap: 60px;
       padding: 40px 0;
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-
-      .skillsSection-title,
-      .skillsSection-text {
-        text-align: center;
-      }
-
-      .skillsSection-title {
-        font-size: var(--text-bigger);
-        font-weight: var(--text-bold);
-        color: var(--title);
-
-        @media (min-width: 992px) {
-          font-size: 45px;
-        }
-      }
     }
 
     .skillsSection-list {
@@ -667,41 +488,6 @@ body {
     flex-direction: column;
     gap: 25px;
     align-items: center;
-
-    .contactMe-titles {
-      max-width: 600px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-
-      h2,
-      p {
-        text-align: center;
-      }
-
-      h2 {
-        font-size: var(--text-bigger);
-        font-weight: var(--text-bold);
-        color: var(--title);
-
-        @media (min-width: 992px) {
-          font-size: 45px;
-        }
-      }
-
-      p {
-        color: var(--content);
-        font-size: var(--text-small);
-        width: 90%;
-        line-height: 20px;
-
-        @media (min-width: 992px) {
-          font-size: 16px;
-          line-height: 26px;
-        }
-      }
-    }
 
     .contactMe-button {
       background-color: var(--main);

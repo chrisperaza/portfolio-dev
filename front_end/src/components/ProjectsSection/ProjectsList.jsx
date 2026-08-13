@@ -1,5 +1,4 @@
-// import React from 'react'
-// Import components
+// Components
 import ProjectsItem from './ProjectsItem';
 
 const ProjectsList = ({ itemsQuantity, database }) => {

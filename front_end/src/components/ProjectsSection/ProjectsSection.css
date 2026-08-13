@@ -1,0 +1,116 @@
+/*****************************/
+/*** PROJECTS SECTION ***/
+/*****************************/
+.projectsSection {
+  width: 100%;
+  justify-items: center;
+
+  div {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .sectionTitles {
+      @media (min-width: 992px) {
+        margin-bottom: 0;
+        padding-top: 0;
+      }
+
+      p span {
+        display: none;
+
+        @media (min-width: 992px) {
+          display: inline;
+        }
+      }
+    }
+
+    .projectsSection-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+
+      .projectsSection-item {
+        background-color: var(--container);
+        padding: 20px 20px 30px 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: space-between;
+        transition: background-color 0.3s ease;
+
+        @media (min-width: 992px) {
+          border-radius: 25px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: #21374e;
+        }
+
+        .projectsSection-link {
+          text-decoration-line: none;
+
+          .projectsSection-linkContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+
+            .projectImage {
+              width: 100%;
+              border-radius: 10px;
+            }
+
+            .projectTitles {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              align-items: flex-start;
+
+              h3 {
+                color: var(--title);
+                font-weight: var(--text-bold);
+                font-size: var(--text-big);
+                line-height: 30px;
+              }
+              p {
+                color: var(--content);
+                font-weight: var(--text-normal);
+                font-size: var(--text-small);
+                line-height: 22px;
+              }
+            }
+          }
+        }
+
+        .project-linkList {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+
+          .project-linkItem {
+            .socialMedia-icon {
+              color: var(--content);
+              transition: transform 0.3s ease;
+            }
+            &:hover {
+              cursor: pointer;
+
+              .socialMedia-icon {
+                color: var(--main-dark);
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

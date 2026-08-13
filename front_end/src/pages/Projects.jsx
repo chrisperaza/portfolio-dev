@@ -1,6 +1,6 @@
 // import React from 'react'
 // Components
-import ProjectsSection from '../components/ProjectsSection';
+import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 import CheckMyGitHub from '../components/CheckMyGitHub';
 import AboutMeSection from '../components/AboutMeSection';
 import ContactMeSection from '../components/ContactMeSection';
