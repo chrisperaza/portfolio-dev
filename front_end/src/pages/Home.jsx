@@ -4,7 +4,7 @@ import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 import BluePillButton from '../components/BluePillButton/BluePillButton';
 import SkillsSection from '../components/SkillsSection';
 import AboutMeSection from '../components/AboutMeSection';
-import ContactMeSection from '../components/ContactMeSection';
+import ContactMeSection from '../components/ContactMeSection/ContactMeSection';
 import HorizontalLine from '../components/HorizontalLine';
 // Database
 import { featuredProjectsArray } from '../database/featuredProjects';
