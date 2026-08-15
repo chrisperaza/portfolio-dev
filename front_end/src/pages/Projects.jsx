@@ -4,7 +4,6 @@ import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 import CheckMyGitHub from '../components/CheckMyGitHub';
 import AboutMeSection from '../components/AboutMeSection';
 import ContactMeSection from '../components/ContactMeSection/ContactMeSection';
-import HorizontalLine from '../components/HorizontalLine';
 // Database
 import { featuredProjectsArray } from '../database/featuredProjects';
 
@@ -35,7 +34,6 @@ const Projects = () => {
       <CheckMyGitHub />
       <AboutMeSection />
       <ContactMeSection />
-      <HorizontalLine />
     </main>
   );
 };

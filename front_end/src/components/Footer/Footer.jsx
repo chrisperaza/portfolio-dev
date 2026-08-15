@@ -1,8 +1,9 @@
-// import React from 'react'
-// Import components
-import SocialMediaList from './SocialMediaList';
-// Import database
-import { socialMediaArray } from '../database/socialMediaArray';
+// Comonents
+import SocialMediaList from '../SocialMediaList';
+// Database
+import { socialMediaArray } from '../../database/socialMediaArray';
+// Styles
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
       <SocialMediaList />
       <div className='footerContainer'>
         <p>
-          Designed and developed by{' '}
+          &copy; 2026 Designed and developed by{' '}
           <a
             href={socialMediaArray[0].link}
             target='_blank'

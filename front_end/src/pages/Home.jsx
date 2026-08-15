@@ -5,7 +5,6 @@ import BluePillButton from '../components/BluePillButton/BluePillButton';
 import SkillsSection from '../components/SkillsSection';
 import AboutMeSection from '../components/AboutMeSection';
 import ContactMeSection from '../components/ContactMeSection/ContactMeSection';
-import HorizontalLine from '../components/HorizontalLine';
 // Database
 import { featuredProjectsArray } from '../database/featuredProjects';
 // import { otherProjectsArray } from '../database/otherProjectsArray';
@@ -30,7 +29,6 @@ const Home = () => {
       <SkillsSection />
       <AboutMeSection />
       <ContactMeSection />
-      <HorizontalLine />
     </main>
   );
 };
