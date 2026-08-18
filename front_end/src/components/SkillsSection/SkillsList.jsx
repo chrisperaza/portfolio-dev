@@ -1,13 +1,13 @@
 // import React from 'react'
 // Import components
 import SkillsItem from './SkillsItem';
-import { skillsArray } from '../database/skillsArray';
+import { skillsArray } from '../../database/skillsArray';
 
-const SkillsList = ({ itemsQuantity }) => {
+const SkillsList = ({ type }) => {
   return (
     <ul className='skillsSection-list'>
       {skillsArray
-        .filter((currentValue, index) => index < itemsQuantity)
+        .filter((currentValue) => currentValue.type === type)
         .map((currentValue) => (
           <SkillsItem
             nameSkill={currentValue.name}

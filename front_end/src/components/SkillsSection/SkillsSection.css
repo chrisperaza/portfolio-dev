@@ -1,0 +1,109 @@
+/*****************************/
+/*** SKILLS SECTION ***/
+/*****************************/
+.skillsContainer {
+  width: 100%;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @media (min-width: 992px) {
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .sectionTitles {
+    gap: 0;
+
+    @media (min-width: 992px) {
+      padding: 0;
+    }
+  }
+
+  .skillsSection {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    /** background-color: var(--container); **/
+    border-radius: 10px;
+
+    @media (min-width: 992px) {
+      gap: 25px;
+    }
+
+    .skillsSection-list {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      list-style: none;
+      align-items: center;
+      margin-bottom: 5px;
+
+      @media (min-width: 992px) {
+        gap: 30px;
+        margin-bottom: 10px;
+      }
+
+      li {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        @media (min-width: 992px) {
+          width: 60px;
+        }
+
+        img {
+          width: 100%;
+          max-height: 30px;
+          @media (min-width: 992px) {
+            max-height: 60px;
+          }
+        }
+      }
+    }
+
+    .skillsSection-text {
+      color: var(--main);
+      font-weight: var(--text-bold);
+      font-size: var(--text-small);
+      line-height: 20px;
+
+      @media (min-width: 992px) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+
+    .skillsSection-button {
+      background-color: transparent;
+      border-radius: 50px;
+      border: solid 2px var(--main);
+      padding: 10px 20px;
+      transition: transform 0.3s ease;
+
+      p {
+        font-weight: var(--text-bold);
+        font-size: var(--text-smaller);
+        color: var(--main);
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: var(--main-dark);
+        border-color: var(--main-dark);
+
+        p {
+          color: var(--body);
+        }
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
 import Banner from '../components/Banner/Banner';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 import BluePillButton from '../components/BluePillButton/BluePillButton';
-import SkillsSection from '../components/SkillsSection';
+import SkillsSection from '../components/SkillsSection/SkillsSection';
 import AboutMeSection from '../components/AboutMeSection';
 import ContactMeSection from '../components/ContactMeSection/ContactMeSection';
 // Database
