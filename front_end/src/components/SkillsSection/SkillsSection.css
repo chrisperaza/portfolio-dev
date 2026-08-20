@@ -3,6 +3,7 @@
 /*****************************/
 .skillsContainer {
   width: 100%;
+  max-width: 1000px;
   justify-items: center;
   display: flex;
   flex-direction: column;
@@ -11,9 +12,11 @@
   margin-bottom: 40px;
 
   @media (min-width: 992px) {
-    gap: 30px;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    flex-direction: row;
+    padding: 30px 0 50px 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .sectionTitles {
@@ -21,12 +24,32 @@
 
     @media (min-width: 992px) {
       padding: 0;
+      align-items: start;
+      gap: 25px;
+      max-width: 550px;
+    }
+
+    h3 {
+      @media (min-width: 992px) {
+        font-size: 50px;
+        text-align: start;
+        font-weight: var(--text-normal);
+      }
+    }
+
+    p {
+      display: none;
+
+      @media (min-width: 992px) {
+        display: block;
+        text-align: start;
+      }
     }
   }
 
   .skillsSection {
     width: 90%;
-    max-width: 900px;
+    /* max-width: 1100px; */
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -35,49 +58,76 @@
     border-radius: 10px;
 
     @media (min-width: 992px) {
-      gap: 25px;
+      /* display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 55px;
+      align-items: start; */
+      /* flex-direction: row;
+      align-items: start;
+      justify-content: space-between; */
+      align-items: start;
+      width: fit-content;
+      gap: 18px;
     }
 
-    .skillsSection-list {
+    div {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap: 15px;
-      list-style: none;
       align-items: center;
-      margin-bottom: 5px;
 
       @media (min-width: 992px) {
-        gap: 30px;
-        margin-bottom: 10px;
+        /* gap: 35px;
+        max-width: 280px; */
+        align-items: start;
       }
 
-      li {
-        width: 30px;
-        display: flex;
-        justify-content: center;
+      .skillsSection-text {
+        color: var(--main);
+        font-weight: var(--text-bold);
+        font-size: var(--text-small);
+        line-height: 20px;
+
         @media (min-width: 992px) {
-          width: 60px;
+          font-size: 16px;
+          line-height: 26px;
+          color: var(--title);
+          font-weight: var(--text-normal);
+        }
+      }
+      .skillsSection-list {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        list-style: none;
+        align-items: center;
+        margin-bottom: 5px;
+
+        @media (min-width: 992px) {
+          /* flex-wrap: wrap;
+          justify-content: start;
+          gap: 25px; */
+          /*           display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(60px, 200px));
+          gap: 1.5rem; */
         }
 
-        img {
-          width: 100%;
-          max-height: 30px;
+        li {
+          width: 30px;
+          display: flex;
+          justify-content: center;
           @media (min-width: 992px) {
-            max-height: 60px;
+            /* width: 50px; */
+          }
+
+          img {
+            width: 100%;
+            max-height: 30px;
+            @media (min-width: 992px) {
+              /* max-height: 60px; */
+            }
           }
         }
-      }
-    }
-
-    .skillsSection-text {
-      color: var(--main);
-      font-weight: var(--text-bold);
-      font-size: var(--text-small);
-      line-height: 20px;
-
-      @media (min-width: 992px) {
-        font-size: 20px;
-        line-height: 26px;
       }
     }
 
