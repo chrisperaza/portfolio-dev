@@ -2,7 +2,7 @@
 import BluePillButton from '../BluePillButton/BluePillButton';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 // React router
 import { Link } from 'react-router-dom';
 // Styles
@@ -38,7 +38,7 @@ const Banner = () => {
               <div>
                 <FontAwesomeIcon
                   className='arrowRightIcon fa-lg'
-                  icon={faArrowRight}
+                  icon={faAngleRight}
                 />
               </div>
             </Link>

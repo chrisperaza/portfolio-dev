@@ -9,7 +9,11 @@ const ProjectsSection = ({ itemsQuantity, database }) => {
     <section className='projectsSection' id='projects'>
       <div>
         <SectionTitles
-          title='Featured projects'
+          title={
+            <>
+              Featured <span>& selected</span> projects
+            </>
+          }
           description={
             <>
               Take a look at some of the projects I have <b>designed</b> and{' '}

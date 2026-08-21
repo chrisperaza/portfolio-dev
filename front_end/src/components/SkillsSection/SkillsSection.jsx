@@ -8,7 +8,11 @@ const SkillsSection = () => {
   return (
     <div className='skillsContainer' id='skills'>
       <SectionTitles
-        title='Skills and technologies I have mastered'
+        title={
+          <>
+            Skills and technologies <span>I have mastered</span>
+          </>
+        }
         description={
           <>
             Take a look at some of the projects I have <b>designed</b> and{' '}

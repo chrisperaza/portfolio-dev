@@ -1,8 +1,11 @@
-// import React from 'react'
-// Import image
-import christianPhoto from '../assets/christianPeraza_photo.png';
-// Import components
-import SocialMediaList from './SocialMediaList';
+// Image
+import christianPhoto from '../../assets/christianPeraza_photo.png';
+// Components
+/* import SocialMediaList from './SocialMediaList';
+ */
+import BluePillButton from '../BluePillButton/BluePillButton';
+// Styles
+import './AboutMeSection.css';
 
 const AboutMeSection = () => {
   return (
@@ -17,7 +20,7 @@ const AboutMeSection = () => {
         <div>
           <div className='aboutMe-infoSection-titlesContainer'>
             <div>
-              <h3>About me</h3>
+              {/* <h3>About me</h3> */}
               <p>Associate of Applied Science in Software Development</p>
             </div>
           </div>
@@ -29,10 +32,8 @@ const AboutMeSection = () => {
             applications that provide exceptional user experiences and
             facilitate or support specific tasks.
           </p>
-          <SocialMediaList />
-          <button className='aboutMe-infoSection-resumeButton'>
-            <p>Download Resume</p>
-          </button>
+          {/* <SocialMediaList /> */}
+          <BluePillButton text='Download Resume' title='Download my Resume' />
         </div>
       </section>
     </section>

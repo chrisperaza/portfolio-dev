@@ -1,11 +1,13 @@
 // import React from 'react'
 // Components
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
-import CheckMyGitHub from '../components/CheckMyGitHub';
-import AboutMeSection from '../components/AboutMeSection';
+import CheckMoreTitles from '../components/CheckMoreTitles/CheckMoreTitles';
+import AboutMeSection from '../components/AboutMeSection/AboutMeSection';
 import ContactMeSection from '../components/ContactMeSection/ContactMeSection';
 // Database
 import { featuredProjectsArray } from '../database/featuredProjects';
+// Icons
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Projects = () => {
   return (
@@ -31,7 +33,23 @@ const Projects = () => {
         itemsQuantity={15}
         database={featuredProjectsArray}
       />
-      <CheckMyGitHub />
+      <CheckMoreTitles
+        icon={faGithub}
+        title={
+          <>
+            See more on my{' '}
+            <a
+              href='https://github.com/chrisperaza'
+              target='_blank'
+              title='Explore my code & projects'
+            >
+              GitHub
+            </a>
+          </>
+        }
+        description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others'
+        morePaddingBottom='morePaddingBottom'
+      />
       <AboutMeSection />
       <ContactMeSection />
     </main>
