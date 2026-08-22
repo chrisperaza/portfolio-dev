@@ -21,7 +21,9 @@ const AboutMeSection = () => {
           <div className='aboutMe-infoSection-titlesContainer'>
             <div>
               {/* <h3>About me</h3> */}
-              <p>Associate of Applied Science in Software Development</p>
+              <h3>
+                <span>Full-Stack</span> JavaScript Software Developer
+              </h3>
             </div>
           </div>
           <p className='aboutMe-infoSection-text'>
