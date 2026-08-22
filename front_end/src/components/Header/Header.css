@@ -70,11 +70,20 @@
     }
 
     .buttonMenu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
       background-color: transparent;
       border: none;
 
       @media (min-width: 992px) {
         display: none;
+      }
+
+      p {
+        color: var(--content);
+        font-size: var(--text-small);
       }
 
       .burgerMenu-icon {

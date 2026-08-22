@@ -1,5 +1,5 @@
 // Hooks
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // Images
 import christianPhoto from '../../assets/christianPeraza_photo.png';
 // Icons
@@ -19,7 +19,27 @@ const Header = () => {
     setShowClass(!showClass);
   };
 
+  // Close menu when clicking
+  const closeMenu = () => {
+    setShowClass(false);
+  };
+
+  // Close menu when clicking everywhere
+  useEffect(() => {
+    if (showClass) {
+      const timer = setTimeout(() => {
+        window.addEventListener('click', closeMenu);
+      }, 0);
+
+      return () => {
+        clearTimeout(timer);
+        window.removeEventListener('click', closeMenu);
+      };
+    }
+  }, [showClass]);
+
   // Toggle menu icon variable
+  const menuText = showClass ? 'CLOSE' : 'MENU';
   const menuIcon = showClass ? faXmark : faBars;
 
   return (
@@ -35,8 +55,9 @@ const Header = () => {
             chris<span>peraza</span>
           </h1>
         </Link>
-        <Navigation showClass={showClass} />
+        <Navigation showClass={showClass} closeMenu={closeMenu} />
         <button className='buttonMenu' onClick={toggleClass}>
+          <p>{menuText}</p>
           <FontAwesomeIcon className='burgerMenu-icon fa-lg' icon={menuIcon} />
         </button>
       </section>

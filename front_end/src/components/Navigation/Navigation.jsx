@@ -3,21 +3,29 @@ import BluePillButton from '../BluePillButton/BluePillButton';
 // Styles
 import './Navigation.css';
 
-const Navigation = ({ showClass }) => {
+const Navigation = ({ showClass, closeMenu }) => {
   return (
     <nav className={`nav ${showClass ? 'showOnMobile' : ''}`}>
       <ul className='navList'>
         <li className='navItem'>
-          <a href='#projects'>Projects</a>
+          <a href='#projects' onClick={closeMenu}>
+            Projects
+          </a>
         </li>
         <li className='navItem'>
-          <a href='#skills'>Skills</a>
+          <a href='#skills' onClick={closeMenu}>
+            Skills
+          </a>
         </li>
         <li className='navItem'>
-          <a href='#aboutMe'>About me</a>
+          <a href='#aboutMe' onClick={closeMenu}>
+            About me
+          </a>
         </li>
         <li className='navItem'>
-          <a href='#contact'>Contact</a>
+          <a href='#contact' onClick={closeMenu}>
+            Contact
+          </a>
         </li>
       </ul>
       <BluePillButton text='Resume' title='Download my Resume' />
