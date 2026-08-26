@@ -1,5 +1,7 @@
 // Hooks
 import { useState, useEffect } from 'react';
+// Utils
+import { HiddenHeaderScroll } from '../../utils/hiddenHeaderScroll';
 // Images
 import christianPhoto from '../../assets/christianPeraza_photo.png';
 // Icons
@@ -42,8 +44,11 @@ const Header = () => {
   const menuText = showClass ? 'CLOSE' : 'MENU';
   const menuIcon = showClass ? faXmark : faBars;
 
+  // Hide header when scroll down
+  const isHidden = HiddenHeaderScroll();
+
   return (
-    <header className='header'>
+    <header className={`header ${isHidden ? 'headerHidden' : ''}`}>
       <section>
         <Link to={'/'} title='Home' className='logoLink'>
           <img

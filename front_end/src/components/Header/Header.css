@@ -9,9 +9,18 @@
   background-color: var(--body);
   justify-items: center;
 
+  /* Transition to hide when scroll down */
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+
   @media (min-width: 992px) {
     border: none;
-    position: initial;
+    /* Making blur */
+    background-color: rgba(22, 33, 39, 0.6);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px); /* Support to Safari */
+    border-bottom: 1px solid rgba(22, 33, 39, 0.2);
   }
 
   section {
@@ -24,7 +33,7 @@
     max-width: 1200px;
 
     @media (min-width: 992px) {
-      padding-top: 30px;
+      padding-top: 20px;
     }
 
     .logoLink {
@@ -91,4 +100,8 @@
       }
     }
   }
+}
+
+.headerHidden {
+  transform: translateY(-100%);
 }

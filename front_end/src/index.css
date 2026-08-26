@@ -56,6 +56,11 @@
 /*****************************/
 html {
   scroll-behavior: smooth;
+  /* scroll-padding-top: 76px;
+
+  @media (min-width: 992px) {
+    scroll-padding-top: 88px;
+  } */
 }
 
 /*****************************/
