@@ -15,7 +15,10 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
-  const [showClass, setShowClass] = useState(false);
+  const [showClass, setShowClass] = useState(false); // Close menu
+
+  // Hide header when scroll down
+  const { isHidden, handleNavClick } = HiddenHeaderScroll();
 
   const toggleClass = () => {
     setShowClass(!showClass);
@@ -44,9 +47,6 @@ const Header = () => {
   const menuText = showClass ? 'CLOSE' : 'MENU';
   const menuIcon = showClass ? faXmark : faBars;
 
-  // Hide header when scroll down
-  const isHidden = HiddenHeaderScroll();
-
   return (
     <header className={`header ${isHidden ? 'headerHidden' : ''}`}>
       <section>
@@ -60,7 +60,11 @@ const Header = () => {
             chris<span>peraza</span>
           </h1>
         </Link>
-        <Navigation showClass={showClass} closeMenu={closeMenu} />
+        <Navigation
+          showClass={showClass}
+          closeMenu={closeMenu}
+          handleNavClick={handleNavClick}
+        />
         <button className='buttonMenu' onClick={toggleClass}>
           <p>{menuText}</p>
           <FontAwesomeIcon className='burgerMenu-icon fa-lg' icon={menuIcon} />

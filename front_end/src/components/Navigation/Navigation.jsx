@@ -12,30 +12,54 @@ import {
 } from '@fortawesome/free-regular-svg-icons';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 
-const Navigation = ({ showClass, closeMenu }) => {
+const Navigation = ({ showClass, closeMenu, handleNavClick }) => {
   return (
     <nav className={`nav ${showClass ? 'showOnMobile' : ''}`}>
       <ul className='navList'>
         <li className='navItem'>
-          <a href='#projects' onClick={closeMenu}>
+          <a
+            href='#projects'
+            onClick={() => {
+              closeMenu();
+              handleNavClick();
+            }}
+          >
             <FontAwesomeIcon className='menuItemsIcon' icon={faFolderOpen} />
             <p>Projects</p>
           </a>
         </li>
         <li className='navItem'>
-          <a href='#skills' onClick={closeMenu}>
+          <a
+            href='#skills'
+            onClick={() => {
+              closeMenu();
+              handleNavClick();
+            }}
+          >
             <FontAwesomeIcon className='menuItemsIcon' icon={faStar} />
             <p>Skills</p>
           </a>
         </li>
         <li className='navItem'>
-          <a href='#aboutMe' onClick={closeMenu}>
+          <a
+            href='#aboutMe'
+            onClick={() => {
+              closeMenu();
+              handleNavClick();
+            }}
+          >
             <FontAwesomeIcon className='menuItemsIcon' icon={faCircleUser} />
             <p>About me</p>
           </a>
         </li>
         <li className='navItem'>
-          <a href='#contact' onClick={closeMenu}>
+          <a
+            href='#contact'
+            onClick={() => {
+              closeMenu();
+              handleNavClick();
+            }}
+          >
             <FontAwesomeIcon className='menuItemsIcon' icon={faPaperPlane} />
             <p>Contact</p>
           </a>
