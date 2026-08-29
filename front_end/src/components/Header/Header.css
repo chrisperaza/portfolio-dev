@@ -18,8 +18,10 @@
     border: none;
     /* Making blur */
     background-color: rgba(22, 33, 39, 0.6);
+    -webkit-backdrop-filter: blur(
+      30px
+    ); /* Support to Safari - prefix -webkit first */
     backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px); /* Support to Safari */
     border-bottom: 1px solid rgba(22, 33, 39, 0.2);
   }
 
