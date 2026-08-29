@@ -127,7 +127,7 @@
       }
 
       .bluePillButton {
-        width: 80%;
+        width: 90%;
 
         @media (min-width: 992px) {
           width: auto;
