@@ -17,9 +17,6 @@ import './Header.css';
 const Header = () => {
   const [showClass, setShowClass] = useState(false); // Close menu
 
-  // Hide header when scroll down
-  const { isHidden, handleNavClick } = HiddenHeaderScroll();
-
   const toggleClass = () => {
     setShowClass(!showClass);
   };
@@ -29,16 +26,21 @@ const Header = () => {
     setShowClass(false);
   };
 
-  // Close menu when clicking everywhere
+  // Close menu when scrolling or clicking
   useEffect(() => {
     if (showClass) {
+      // Close menu when scrolling
+      window.addEventListener('scroll', closeMenu, { passive: true });
+
+      // Close menu when clicking
       const timer = setTimeout(() => {
         window.addEventListener('click', closeMenu);
       }, 0);
 
       return () => {
         clearTimeout(timer);
-        window.removeEventListener('click', closeMenu);
+        window.removeEventListener('click', closeMenu); // Click
+        window.removeEventListener('scroll', closeMenu); // Scroll
       };
     }
   }, [showClass]);
@@ -46,6 +48,9 @@ const Header = () => {
   // Toggle menu icon variable
   const menuText = showClass ? 'CLOSE' : 'MENU';
   const menuIcon = showClass ? faXmark : faBars;
+
+  // Hide header when scroll down
+  const { isHidden, handleNavClick } = HiddenHeaderScroll();
 
   return (
     <header className={`header ${isHidden ? 'headerHidden' : ''}`}>
