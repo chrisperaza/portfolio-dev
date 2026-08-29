@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    align-items: flex-start;
+
     background-color: var(--container_2);
     padding: 25px 23px 25px 23px;
     /* border: solid 1px var(--border); */
@@ -32,6 +32,8 @@
       gap: 25px;
 
       .navItem {
+        width: 100%;
+
         a {
           font-size: var(--text-small);
           font-weight: var(--text-bold);

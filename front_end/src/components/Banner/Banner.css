@@ -126,11 +126,14 @@
         padding: 15px 0;
       }
 
-      .bluePillButton {
+      .contactMeLink {
         width: 90%;
 
         @media (min-width: 992px) {
           width: auto;
+        }
+        .bluePillButton {
+          width: 100%;
         }
       }
 

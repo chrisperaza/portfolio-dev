@@ -31,7 +31,13 @@ const Banner = () => {
           </p>
         </section>
         <div className='bannerButtons'>
-          <BluePillButton text='Contact me' title='Send me an email' />
+          <a
+            className='contactMeLink'
+            href='mailto:christianperaza2000@gmail.com'
+            target='_blank'
+          >
+            <BluePillButton text='Contact me' title='Send me an email' />
+          </a>
           <button className='banner_buttons-projects'>
             <Link to={'/projects'} title='Go to all projects'>
               <p>Check out all my projects</p>
