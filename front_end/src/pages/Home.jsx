@@ -12,7 +12,8 @@ import { featuredProjectsArray } from '../database/featuredProjects';
 // React router
 import { Link } from 'react-router-dom';
 // Icons
-import { faDiagramProject } from '@fortawesome/free-solid-svg-icons';
+// import { faDiagramProject } from '@fortawesome/free-solid-svg-icons';
+import { faFolderOpen } from '@fortawesome/free-solid-svg-icons'; // '@fortawesome/free-regular-svg-icons';
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
       <Banner />
       <ProjectsSection itemsQuantity={6} database={featuredProjectsArray} />
       <CheckMoreTitles
-        icon={faDiagramProject}
+        icon={faFolderOpen}
         title='Check out more projects'
         description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others'
       />

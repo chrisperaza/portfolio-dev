@@ -69,6 +69,10 @@ html {
 body {
   background-color: var(--body);
   width: 100%;
+
+  @media (min-width: 992px) {
+    padding-top: 8px;
+  }
 }
 
 /*****************************/

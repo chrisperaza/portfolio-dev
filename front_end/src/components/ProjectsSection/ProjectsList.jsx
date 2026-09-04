@@ -10,6 +10,7 @@ const ProjectsList = ({ itemsQuantity, database }) => {
           <ProjectsItem
             image={currentValue.image}
             title={currentValue.title}
+            techs={currentValue.techs}
             description={currentValue.description}
             repoLink={currentValue.repoLink}
             demoLink={currentValue.demoLink}

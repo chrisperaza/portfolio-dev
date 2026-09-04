@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Styles
 import './CheckMoreTitles.css';
 
-const CheckMyGitHub = ({ icon, title, description, morePaddingBottom }) => {
+const CheckMoreTitles = ({ icon, title, description, morePaddingBottom }) => {
   return (
     <div className={`checkMoreTitles-container ${morePaddingBottom}`}>
       <section className='checkMoreTitles-section'>
@@ -27,4 +27,4 @@ const CheckMyGitHub = ({ icon, title, description, morePaddingBottom }) => {
   );
 };
 
-export default CheckMyGitHub;
+export default CheckMoreTitles;
