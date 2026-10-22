@@ -66,15 +66,25 @@ const Navigation = ({ showClass, closeMenu, handleNavClick }) => {
         </li>
       </ul>
       <hr />
-      <button className='resumeBtnMobile'>
-        <FontAwesomeIcon className='dlResumeIcon' icon={faAnglesDown} />
-        <p>Download Resume</p>
-        {/*         <FontAwesomeIcon icon={faAngleDown} />
-         */}{' '}
-      </button>
+      <a
+        className='resumeBtnLink'
+        href='../../../public/chrisperaza-cv.pdf'
+        download='chrisperaza-cv.pdf'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <button className='resumeBtnMobile'>
+          <FontAwesomeIcon className='dlResumeIcon' icon={faAnglesDown} />
+          <p>Download Resume</p>
+          {/*         <FontAwesomeIcon icon={faAngleDown} />
+           */}{' '}
+        </button>
+      </a>
       <a
         href='../../../public/chrisperaza-cv.pdf'
         download='chrisperaza-cv.pdf'
+        target='_blank'
+        rel='noopener noreferrer'
       >
         <BluePillButton text='Resume' title='Download my Resume' />
       </a>

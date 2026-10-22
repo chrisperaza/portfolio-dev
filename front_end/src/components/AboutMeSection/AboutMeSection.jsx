@@ -38,6 +38,8 @@ const AboutMeSection = () => {
           <a
             href='../../../public/chrisperaza-cv.pdf'
             download='chrisperaza-cv.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <BluePillButton
               text='Download my Resume'

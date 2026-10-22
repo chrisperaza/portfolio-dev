@@ -64,26 +64,31 @@
       border: solid 1px var(--border);
     }
 
-    .resumeBtnMobile {
-      background-color: transparent;
-      border: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 5px;
-      margin-right: 5px;
+    .resumeBtnLink {
+      display: block;
+      text-decoration-line: none;
 
-      font-size: var(--text-small);
-      font-weight: var(--text-bold);
-      color: var(--content);
+      .resumeBtnMobile {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin-right: 5px;
 
-      p {
-        color: var(--main);
-      }
+        font-size: var(--text-small);
+        font-weight: var(--text-bold);
+        color: var(--content);
 
-      .dlResumeIcon {
-        color: var(--main);
-        font-size: 16px;
+        p {
+          color: var(--main);
+        }
+
+        .dlResumeIcon {
+          color: var(--main);
+          font-size: 16px;
+        }
       }
     }
 
@@ -129,6 +134,7 @@
       display: none;
     }
 
+    .resumeBtnLink,
     .resumeBtnMobile {
       display: none;
     }

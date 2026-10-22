@@ -41,6 +41,8 @@ const Banner = () => {
               href='../../../public/chrisperaza-cv.pdf'
               download='chrisperaza-cv.pdf'
               title='Download my Resume'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <p>Download my Resume</p>
               <div>
