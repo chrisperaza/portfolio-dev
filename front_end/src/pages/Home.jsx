@@ -14,14 +14,11 @@ import ContactMeSection from '../components/ContactMeSection/ContactMeSection';
 import { featuredProjectsArray } from '../database/featuredProjects';
 // import { otherProjectsArray } from '../database/otherProjectsArray';
 // React router
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // Icons
 // import { faDiagramProject } from '@fortawesome/free-solid-svg-icons';
-import {
-  faFolderOpen,
-  faAngleDown,
-  faAngleUp,
-} from '@fortawesome/free-solid-svg-icons'; // '@fortawesome/free-regular-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'; // '@fortawesome/free-regular-svg-icons';
 
 const Home = () => {
   const [showMore, setShowMore] = useState(false); // Show more projects
@@ -32,7 +29,7 @@ const Home = () => {
 
   const isDesktop = useMediaQuery('(min-width: 992px');
 
-  const itemsQuantity = isDesktop ? 6 : showMore ? 6 : 3;
+  const itemsQuantity = isDesktop ? 9 : showMore ? 6 : 3;
   const btnName = showMore ? 'less' : 'more';
   const icon = showMore ? faAngleUp : faAngleDown;
 
@@ -50,13 +47,37 @@ const Home = () => {
         icon={icon}
       />
       <CheckMoreTitles
+        icon={faGithub}
+        title={
+          <>
+            See more on my{' '}
+            <a
+              href='https://github.com/chrisperaza'
+              target='_blank'
+              title='Explore my code & projects'
+            >
+              GitHub
+            </a>
+          </>
+        }
+        description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others'
+      />
+      {/* <CheckMoreTitles
         icon={faFolderOpen}
         title='Check out more projects'
         description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others'
-      />
-      <Link className='allProjectsLink' to={'/projects'} title='All projects'>
+      /> */}
+      {/* <Link className='allProjectsLink' to={'/projects'} title='All projects'>
         <BluePillButton text='See more projects' title='Go to all projects' />
-      </Link>
+      </Link> */}
+      <a
+        className='allProjectsLink'
+        href='https://github.com/chrisperaza'
+        target='_blank'
+        title='Explore my code & projects'
+      >
+        <BluePillButton text='Check out more projects' />
+      </a>
       <SkillsSection />
       <AboutMeSection />
       <ContactMeSection />

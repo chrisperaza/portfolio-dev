@@ -39,8 +39,8 @@ const Banner = () => {
             <BluePillButton text='Contact me' title='Send me an email' />
           </a>
           <button className='banner_buttons-projects'>
-            <Link to={'/projects'} title='Go to all projects'>
-              <p>Check out all my projects</p>
+            <Link to={'/#'} title='Download my Resume'>
+              <p>Download my Resume</p>
               <div>
                 <FontAwesomeIcon
                   className='arrowRightIcon fa-lg'

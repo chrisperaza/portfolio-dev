@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 // Pages
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+/* import Projects from './pages/Projects'; */
 // Utils
 import ScrollToTop from './utils/ScrollToTop';
 // Router dom
@@ -17,7 +17,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects />} />
+        {/* <Route path='/projects' element={<Projects />} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>
