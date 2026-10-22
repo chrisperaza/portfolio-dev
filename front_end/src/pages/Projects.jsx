@@ -1,15 +1,32 @@
-// import React from 'react'
+// Hooks
+import { useState } from 'react';
+// Utils
+import { useMediaQuery } from '../utils/useMediaQuery';
 // Components
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 import CheckMoreTitles from '../components/CheckMoreTitles/CheckMoreTitles';
 import AboutMeSection from '../components/AboutMeSection/AboutMeSection';
 import ContactMeSection from '../components/ContactMeSection/ContactMeSection';
+import BluePillButton from '../components/BluePillButton/BluePillButton';
 // Database
 import { featuredProjectsArray } from '../database/featuredProjects';
 // Icons
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'; // '@fortawesome/free-regular-svg-icons';
 
 const Projects = () => {
+  const [showMore, setShowMore] = useState(false); // Show more projects
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
+  const isDesktop = useMediaQuery('(min-width: 992px');
+
+  const itemsQuantity = isDesktop ? 12 : showMore ? 12 : 6;
+  const btnName = showMore ? 'less' : 'more';
+  const icon = showMore ? faAngleUp : faAngleDown;
+
   return (
     <main className='main'>
       <div className='banner'>
@@ -28,10 +45,14 @@ const Projects = () => {
       </div>
       <hr className='allProjectsHrLine' />
       <ProjectsSection
-        title='All projects'
-        description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others.'
-        itemsQuantity={15}
+        itemsQuantity={itemsQuantity}
         database={featuredProjectsArray}
+      />
+      <BluePillButton
+        text={`Show ${btnName} featured projects`}
+        title={`Show ${btnName}`}
+        clickFunction={toggleShowMore}
+        icon={icon}
       />
       <CheckMoreTitles
         icon={faGithub}

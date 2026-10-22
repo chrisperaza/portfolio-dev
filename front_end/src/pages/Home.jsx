@@ -1,3 +1,7 @@
+// Hooks
+import { useState } from 'react';
+// Utils
+import { useMediaQuery } from '../utils/useMediaQuery';
 // Components
 import Banner from '../components/Banner/Banner';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
@@ -13,13 +17,38 @@ import { featuredProjectsArray } from '../database/featuredProjects';
 import { Link } from 'react-router-dom';
 // Icons
 // import { faDiagramProject } from '@fortawesome/free-solid-svg-icons';
-import { faFolderOpen } from '@fortawesome/free-solid-svg-icons'; // '@fortawesome/free-regular-svg-icons';
+import {
+  faFolderOpen,
+  faAngleDown,
+  faAngleUp,
+} from '@fortawesome/free-solid-svg-icons'; // '@fortawesome/free-regular-svg-icons';
 
 const Home = () => {
+  const [showMore, setShowMore] = useState(false); // Show more projects
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
+  const isDesktop = useMediaQuery('(min-width: 992px');
+
+  const itemsQuantity = isDesktop ? 6 : showMore ? 6 : 3;
+  const btnName = showMore ? 'less' : 'more';
+  const icon = showMore ? faAngleUp : faAngleDown;
+
   return (
     <main className='main'>
       <Banner />
-      <ProjectsSection itemsQuantity={6} database={featuredProjectsArray} />
+      <ProjectsSection
+        itemsQuantity={itemsQuantity}
+        database={featuredProjectsArray}
+      />
+      <BluePillButton
+        text={`Show ${btnName} featured projects`}
+        title={`Show ${btnName}`}
+        clickFunction={toggleShowMore}
+        icon={icon}
+      />
       <CheckMoreTitles
         icon={faFolderOpen}
         title='Check out more projects'
