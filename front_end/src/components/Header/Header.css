@@ -32,7 +32,11 @@
     width: 90%;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1220px;
+
+    @media (min-width: 1530px) {
+      max-width: 1440px;
+    }
 
     .logoLink {
       display: flex;
