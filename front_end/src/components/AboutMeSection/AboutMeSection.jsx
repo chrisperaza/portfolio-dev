@@ -6,6 +6,8 @@ import christianPhoto from '../../assets/christianPeraza_photo.png';
 import BluePillButton from '../BluePillButton/BluePillButton';
 // Styles
 import './AboutMeSection.css';
+// Utils
+import { downloadCV } from '../../utils/downloadCV';
 
 const AboutMeSection = () => {
   return (
@@ -35,17 +37,11 @@ const AboutMeSection = () => {
             facilitate or support specific tasks.
           </p>
           {/* <SocialMediaList /> */}
-          <a
-            href='../../../public/chrisperaza-cv.pdf'
-            download='chrisperaza-cv.pdf'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <BluePillButton
-              text='Download my Resume'
-              title='Download my Resume'
-            />
-          </a>
+          <BluePillButton
+            text='Download my Resume'
+            title='Download my Resume'
+            clickFunction={downloadCV}
+          />
         </div>
       </section>
     </section>

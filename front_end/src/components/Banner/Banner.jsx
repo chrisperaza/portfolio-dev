@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 // Styles
 import './Banner.css';
+// Utils
+import { downloadCV } from '../../utils/downloadCV';
 
 const Banner = () => {
   return (
@@ -36,22 +38,18 @@ const Banner = () => {
           >
             <BluePillButton text='Contact me' title='Send me an email' />
           </a>
-          <button className='banner_buttons-resume'>
-            <a
-              href='../../../public/chrisperaza-cv.pdf'
-              download='chrisperaza-cv.pdf'
-              title='Download my Resume'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <p>Download my Resume</p>
-              <div>
-                <FontAwesomeIcon
-                  className='arrowRightIcon fa-lg'
-                  icon={faAngleRight}
-                />
-              </div>
-            </a>
+          <button
+            className='banner_buttons-resume'
+            title='Download my Resume'
+            onClick={downloadCV}
+          >
+            <p>Download my Resume</p>
+            <div>
+              <FontAwesomeIcon
+                className='arrowRightIcon fa-lg'
+                icon={faAngleRight}
+              />
+            </div>
           </button>
         </div>
       </section>

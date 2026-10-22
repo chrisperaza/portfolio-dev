@@ -11,6 +11,8 @@ import {
   faPaperPlane,
 } from '@fortawesome/free-regular-svg-icons';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
+// Utils
+import { downloadCV } from '../../utils/downloadCV';
 
 const Navigation = ({ showClass, closeMenu, handleNavClick }) => {
   return (
@@ -66,28 +68,17 @@ const Navigation = ({ showClass, closeMenu, handleNavClick }) => {
         </li>
       </ul>
       <hr />
-      <a
-        className='resumeBtnLink'
-        href='../../../public/chrisperaza-cv.pdf'
-        download='chrisperaza-cv.pdf'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        <button className='resumeBtnMobile'>
-          <FontAwesomeIcon className='dlResumeIcon' icon={faAnglesDown} />
-          <p>Download Resume</p>
-          {/*         <FontAwesomeIcon icon={faAngleDown} />
-           */}{' '}
-        </button>
-      </a>
-      <a
-        href='../../../public/chrisperaza-cv.pdf'
-        download='chrisperaza-cv.pdf'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        <BluePillButton text='Resume' title='Download my Resume' />
-      </a>
+      <button className='resumeBtnMobile' onClick={downloadCV}>
+        <FontAwesomeIcon className='dlResumeIcon' icon={faAnglesDown} />
+        <p>Download Resume</p>
+        {/*         <FontAwesomeIcon icon={faAngleDown} />
+         */}{' '}
+      </button>
+      <BluePillButton
+        text='Resume'
+        title='Download my Resume'
+        clickFunction={downloadCV}
+      />
     </nav>
   );
 };
