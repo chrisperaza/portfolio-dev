@@ -72,7 +72,12 @@ const Navigation = ({ showClass, closeMenu, handleNavClick }) => {
         {/*         <FontAwesomeIcon icon={faAngleDown} />
          */}{' '}
       </button>
-      <BluePillButton text='Resume' title='Download my Resume' />
+      <a
+        href='../../../public/chrisperaza-cv.pdf'
+        download='chrisperaza-cv.pdf'
+      >
+        <BluePillButton text='Resume' title='Download my Resume' />
+      </a>
     </nav>
   );
 };

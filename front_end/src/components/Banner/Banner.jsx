@@ -3,8 +3,6 @@ import BluePillButton from '../BluePillButton/BluePillButton';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-// React router
-import { Link } from 'react-router-dom';
 // Styles
 import './Banner.css';
 
@@ -38,8 +36,12 @@ const Banner = () => {
           >
             <BluePillButton text='Contact me' title='Send me an email' />
           </a>
-          <button className='banner_buttons-projects'>
-            <Link to={'/#'} title='Download my Resume'>
+          <button className='banner_buttons-resume'>
+            <a
+              href='../../../public/chrisperaza-cv.pdf'
+              download='chrisperaza-cv.pdf'
+              title='Download my Resume'
+            >
               <p>Download my Resume</p>
               <div>
                 <FontAwesomeIcon
@@ -47,7 +49,7 @@ const Banner = () => {
                   icon={faAngleRight}
                 />
               </div>
-            </Link>
+            </a>
           </button>
         </div>
       </section>

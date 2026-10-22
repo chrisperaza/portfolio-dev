@@ -35,7 +35,15 @@ const AboutMeSection = () => {
             facilitate or support specific tasks.
           </p>
           {/* <SocialMediaList /> */}
-          <BluePillButton text='Download Resume' title='Download my Resume' />
+          <a
+            href='../../../public/chrisperaza-cv.pdf'
+            download='chrisperaza-cv.pdf'
+          >
+            <BluePillButton
+              text='Download my Resume'
+              title='Download my Resume'
+            />
+          </a>
         </div>
       </section>
     </section>

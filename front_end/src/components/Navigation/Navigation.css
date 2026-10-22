@@ -87,6 +87,7 @@
       }
     }
 
+    a,
     .bluePillButton {
       display: none;
     }
@@ -130,6 +131,10 @@
 
     .resumeBtnMobile {
       display: none;
+    }
+
+    a {
+      text-decoration-line: none;
     }
 
     .bluePillButton {
