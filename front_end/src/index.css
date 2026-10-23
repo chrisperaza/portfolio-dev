@@ -114,7 +114,7 @@ body {
 /*** ALL PROJECTS BUTTON ***/
 /*****************************/
 .allProjectsLink {
-  width: 65%;
+  width: 90%;
   max-width: 300px;
   text-decoration-line: none;
   color: var(--body);
