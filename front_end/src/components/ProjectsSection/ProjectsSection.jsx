@@ -20,7 +20,7 @@ const ProjectsSection = ({ itemsQuantity, database }) => {
               <b>developed</b>
               <span>
                 . These include <b>original</b> ones, some <b>clones</b>, and{' '}
-                <b>landing pages</b>, among others
+                <b>landing pages</b>, among others.
               </span>
             </>
           }

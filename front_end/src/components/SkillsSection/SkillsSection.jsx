@@ -15,12 +15,9 @@ const SkillsSection = () => {
         }
         description={
           <>
-            Take a look at some of the projects I have <b>designed</b> and{' '}
-            <b>developed</b>
-            <span>
-              . These include <b>original</b> ones, some <b>clones</b>, and{' '}
-              <b>landing pages</b>, among others
-            </span>
+            From <b>UI design and interactive frontends</b> to solid{' '}
+            <b>backend systems</b>, I use a full JavaScript stack to build{' '}
+            <b>clean</b>, <b>fast</b>, and <b>responsive</b> web apps.
           </>
         }
       />

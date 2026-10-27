@@ -60,7 +60,13 @@ const Home = () => {
             </a>
           </>
         }
-        description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others'
+        description={
+          <>
+            Check out my GitHub to <b>explore my code</b>, see{' '}
+            <b>what I'm building</b>, and learn more about my{' '}
+            <b>full-stack JavaScript projects</b>!
+          </>
+        }
       />
       {/* <CheckMoreTitles
         icon={faFolderOpen}
@@ -76,7 +82,7 @@ const Home = () => {
         target='_blank'
         title='Explore my code & projects'
       >
-        <BluePillButton text='Check out more projects' />
+        <BluePillButton text="See what I'm building" />
       </a>
       <SkillsSection />
       <AboutMeSection />
