@@ -1,9 +1,8 @@
 // Image
 import christianPhoto from '../../assets/christianPeraza_photo.png';
 // Components
-/* import SocialMediaList from './SocialMediaList';
- */
 import BluePillButton from '../BluePillButton/BluePillButton';
+import ArrowButton from '../ArrowButton/ArrowButton';
 // Styles
 import './AboutMeSection.css';
 // Utils
@@ -19,13 +18,10 @@ const AboutMeSection = () => {
           alt='Profile photo of Christian Peraza smiling, wearing a white shirt and dark green tie, with a blurred nature background.'
           width={120}
         />
-        <div>
+        <div className='aboutMe-infoSection-container'>
           <div className='aboutMe-infoSection-titlesContainer'>
             <div>
-              {/* <h3>About me</h3> */}
-              <h3>
-                <span>Full-Stack</span> JavaScript Software Developer
-              </h3>
+              <h3>Full-Stack JavaScript Software Developer</h3>
             </div>
           </div>
           <p className='aboutMe-infoSection-text'>
@@ -36,12 +32,23 @@ const AboutMeSection = () => {
             applications that provide exceptional user experiences and
             facilitate or support specific tasks.
           </p>
-          {/* <SocialMediaList /> */}
-          <BluePillButton
-            text='Download my Resume'
-            title='Download my Resume'
-            clickFunction={downloadCV}
-          />
+          <div className='aboutMe-infoSection-buttons'>
+            <BluePillButton
+              text='Download my Resume'
+              title='Download my Resume'
+              clickFunction={downloadCV}
+            />
+            <a
+              className='linkedin-link'
+              href='https://www.linkedin.com/in/chrisperaza'
+              target='_blank'
+            >
+              <ArrowButton
+                text='Professional network & experience'
+                title='Check out my LinkedIn'
+              />
+            </a>
+          </div>
         </div>
       </section>
     </section>
