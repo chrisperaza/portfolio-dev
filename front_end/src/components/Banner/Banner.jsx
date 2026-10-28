@@ -1,8 +1,6 @@
 // Components
 import BluePillButton from '../BluePillButton/BluePillButton';
-// Icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import ArrowButton from '../ArrowButton/ArrowButton';
 // Styles
 import './Banner.css';
 // Utils
@@ -38,19 +36,11 @@ const Banner = () => {
           >
             <BluePillButton text='Contact me' title='Send me an email' />
           </a>
-          <button
-            className='banner_buttons-resume'
+          <ArrowButton
+            text='Download my Resume'
             title='Download my Resume'
-            onClick={downloadCV}
-          >
-            <p>Download my Resume</p>
-            <div>
-              <FontAwesomeIcon
-                className='arrowRightIcon fa-lg'
-                icon={faAngleRight}
-              />
-            </div>
-          </button>
+            clickFunction={downloadCV}
+          />
         </div>
       </section>
     </div>

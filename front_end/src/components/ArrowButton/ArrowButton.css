@@ -1,0 +1,48 @@
+/*****************************/
+/*** ARROW BUTTON ***/
+/*****************************/
+.arrowButton {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 10px 0;
+
+  @media (min-width: 992px) {
+    gap: 10px;
+  }
+
+  p {
+    font-size: var(--text-small);
+    color: var(--main);
+    transition: transform 0.3s ease;
+
+    @media (min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  .arrowRightIcon {
+    color: var(--main);
+    justify-content: center;
+    transition: transform 0.3s ease;
+
+    @media (min-width: 992px) {
+      font-size: 20px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    p {
+      color: var(--main-dark);
+    }
+
+    .arrowRightIcon {
+      color: var(--main-dark);
+      transform: translateX(6px);
+    }
+  }
+}
