@@ -17,6 +17,7 @@ const ProjectsItem = ({
         className='projectsSection-link'
         href={demoLink}
         target='_blank'
+        rel='noopener noreferrer'
         title={`Go to ${title} live demo`}
       >
         <section className='projectsSection-linkContainer'>
@@ -37,6 +38,7 @@ const ProjectsItem = ({
           <a
             href={repoLink}
             target='_blank'
+            rel='noopener noreferrer'
             title={`Check out the ${title} repository`}
           >
             <FontAwesomeIcon

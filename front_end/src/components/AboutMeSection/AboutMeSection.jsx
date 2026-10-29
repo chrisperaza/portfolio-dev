@@ -42,6 +42,7 @@ const AboutMeSection = () => {
               className='linkedin-link'
               href='https://www.linkedin.com/in/chrisperaza'
               target='_blank'
+              rel='noopener noreferrer'
             >
               <ArrowButton
                 text='Professional network & experience'

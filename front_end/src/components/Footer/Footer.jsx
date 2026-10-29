@@ -1,5 +1,5 @@
 // Comonents
-import SocialMediaList from '../SocialMediaList';
+import SocialMediaList from '../SocialMediaList/SocialMediaList';
 // Database
 import { socialMediaArray } from '../../database/socialMediaArray';
 // Styles
@@ -15,6 +15,7 @@ const Footer = () => {
           <a
             href={socialMediaArray[0].link}
             target='_blank'
+            rel='noopener noreferrer'
             title={socialMediaArray[0].title}
           >
             @chrisperaza
@@ -24,6 +25,7 @@ const Footer = () => {
           <a
             href={socialMediaArray[3].link}
             target='_blank'
+            rel='noopener noreferrer'
             title={socialMediaArray[3].title}
           >
             christianperaza2000@gmail.com

@@ -54,6 +54,7 @@ const Home = () => {
             <a
               href='https://github.com/chrisperaza'
               target='_blank'
+              rel='noopener noreferrer'
               title='Explore my code & projects'
             >
               GitHub
@@ -80,6 +81,7 @@ const Home = () => {
         className='allProjectsLink'
         href='https://github.com/chrisperaza'
         target='_blank'
+        rel='noopener noreferrer'
         title='Explore my code & projects'
       >
         <BluePillButton text="See what I'm building" />

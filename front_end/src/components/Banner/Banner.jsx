@@ -33,6 +33,7 @@ const Banner = () => {
             className='contactMeLink'
             href='mailto:christianperaza2000@gmail.com'
             target='_blank'
+            rel='noopener noreferrer'
           >
             <BluePillButton text='Contact me' title='Send me an email' />
           </a>
