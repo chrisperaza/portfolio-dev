@@ -76,16 +76,6 @@ body {
 }
 
 /*****************************/
-/*** HORIZONTAL LINE COMPONENT ***/
-/*****************************/
-.horizontalLine {
-  width: 90%;
-  height: 0;
-  align-self: center;
-  border: solid 1px var(--container);
-}
-
-/*****************************/
 /*** ALL PROJECTS HORIZONTAL LINE ***/
 /*****************************/
 .allProjectsHrLine {
@@ -102,12 +92,6 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-
-  .horizontalLine {
-    @media (min-width: 992px) {
-      display: none;
-    }
-  }
 }
 
 /*****************************/
