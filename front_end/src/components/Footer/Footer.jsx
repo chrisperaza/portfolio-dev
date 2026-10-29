@@ -1,7 +1,7 @@
-// Comonents
+// Components
 import SocialMediaList from '../SocialMediaList/SocialMediaList';
 // Database
-import { socialMediaArray } from '../../database/socialMediaArray';
+// import { socialMediaArray } from '../../database/socialMediaArray';
 // Styles
 import './Footer.css';
 
@@ -13,20 +13,20 @@ const Footer = () => {
         <p>
           &copy; 2026 Designed and developed by{' '}
           <a
-            href={socialMediaArray[0].link}
+            href='https://github.com/chrisperaza'
             target='_blank'
             rel='noopener noreferrer'
-            title={socialMediaArray[0].title}
+            title='Explore my code & projects'
           >
             @chrisperaza
           </a>
         </p>
         <p>
           <a
-            href={socialMediaArray[3].link}
+            href='mailto:christianperaza2000@gmail.com'
             target='_blank'
             rel='noopener noreferrer'
-            title={socialMediaArray[3].title}
+            title='Send me an email'
           >
             christianperaza2000@gmail.com
           </a>
