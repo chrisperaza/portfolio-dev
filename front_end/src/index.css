@@ -108,3 +108,14 @@ body {
     width: 100%;
   }
 }
+
+/*****************************/
+/*** ID FOR SHOW/LESS MORE PROJECTS BUTTONS ***/
+/*****************************/
+#hide {
+  display: none;
+}
+
+#showMoreProjectsButton {
+  scroll-margin-top: 340px;
+}

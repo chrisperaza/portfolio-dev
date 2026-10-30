@@ -30,8 +30,11 @@ const Home = () => {
   const isDesktop = useMediaQuery('(min-width: 992px');
 
   const itemsQuantity = isDesktop ? 9 : showMore ? 6 : 3;
-  const btnName = showMore ? 'less' : 'more';
-  const icon = showMore ? faAngleUp : faAngleDown;
+  const additionalClassName1 = showMore ? 'hide' : 'showMoreProjectsButton';
+  const additionalClassName2 = showMore ? '' : 'hide';
+  // const btnName = showMore ? 'less' : 'more';
+  // const btnLink = showMore ? '' : '#projects';
+  // const icon = showMore ? faAngleUp : faAngleDown;
 
   return (
     <main className='main'>
@@ -41,11 +44,21 @@ const Home = () => {
         database={featuredProjectsArray}
       />
       <BluePillButton
-        text={`Show ${btnName} featured projects`}
-        title={`Show ${btnName}`}
+        text={`Show more featured projects`}
+        title={`Show more`}
         clickFunction={toggleShowMore}
-        icon={icon}
+        icon={faAngleDown}
+        additionalClassName={additionalClassName1}
       />
+      <a href='#showMoreProjectsButton' className='showLessProjectsLink'>
+        <BluePillButton
+          text={`Show less featured projects`}
+          title={`Show less`}
+          clickFunction={toggleShowMore}
+          icon={faAngleUp}
+          additionalClassName={additionalClassName2}
+        />
+      </a>
       <CheckMoreTitles
         icon={faGithub}
         title={
@@ -69,14 +82,6 @@ const Home = () => {
           </>
         }
       />
-      {/* <CheckMoreTitles
-        icon={faFolderOpen}
-        title='Check out more projects'
-        description='Take a look at some of the projects I have designed and developed. These include original ones, some clones, and landing pages, among others'
-      /> */}
-      {/* <Link className='allProjectsLink' to={'/projects'} title='All projects'>
-        <BluePillButton text='See more projects' title='Go to all projects' />
-      </Link> */}
       <a
         className='allProjectsLink'
         href='https://github.com/chrisperaza'
