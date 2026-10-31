@@ -1,114 +1,129 @@
 .nav {
-  /* Mobile view */
-  @media (max-width: 992px) {
-    position: absolute;
-    top: 120%;
-    right: 5%;
+  /* Mobile view (base styles) */
+  position: absolute;
+  top: 120%;
+  right: 5%;
 
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  background-color: var(--container_2);
+  padding: 25px 23px 25px 23px;
+  /* border: solid 1px var(--border); */
+  border-radius: 15px;
+  width: fit-content;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s;
+
+  .navList {
+    list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 25px;
 
-    background-color: var(--container_2);
-    padding: 25px 23px 25px 23px;
-    /* border: solid 1px var(--border); */
-    border-radius: 15px;
-    width: fit-content;
+    .navItem {
+      width: 100%;
 
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
+      a {
+        font-size: var(--text-small);
+        font-weight: var(--text-bold);
+        color: var(--content);
+        text-decoration-line: none;
+        transition: color 0.3s ease;
 
-    transition:
-      opacity 0.3s ease,
-      transform 0.3s ease,
-      visibility 0.3s;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
 
-    .navList {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 25px;
+        &:hover {
+          cursor: pointer;
+          color: var(--main);
+        }
 
-      .navItem {
-        width: 100%;
-
-        a {
-          font-size: var(--text-small);
-          font-weight: var(--text-bold);
-          color: var(--content);
-          text-decoration-line: none;
-          transition: color 0.3s ease;
-
-          display: flex;
-          flex-direction: row;
-          gap: 10px;
-          align-items: center;
-
-          &:hover {
-            cursor: pointer;
-            color: var(--main);
-          }
-
-          .menuItemsIcon {
-            font-size: 16px;
-          }
+        .menuItemsIcon {
+          font-size: 16px;
         }
       }
     }
-
-    hr {
-      width: 100%;
-      height: 0;
-      border: solid 1px var(--border);
-    }
-    .resumeBtnMobile {
-      background-color: transparent;
-      border: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 5px;
-      margin-right: 5px;
-
-      font-size: var(--text-small);
-      font-weight: var(--text-bold);
-      color: var(--content);
-
-      p {
-        color: var(--main);
-      }
-
-      .dlResumeIcon {
-        color: var(--main);
-        font-size: 16px;
-      }
-    }
-    .bluePillButton {
-      display: none;
-    }
   }
 
-  /* Desktop view */
-  @media (min-width: 992px) {
+  hr {
+    width: 100%;
+    height: 0;
+    border: solid 1px var(--border);
+  }
+  .resumeBtnMobile {
+    background-color: transparent;
+    border: none;
     display: flex;
     flex-direction: row;
-    gap: 40px;
     align-items: center;
+    gap: 5px;
+    margin-right: 5px;
+
+    font-size: var(--text-small);
+    font-weight: var(--text-bold);
+    color: var(--content);
+
+    p {
+      color: var(--main);
+    }
+
+    .dlResumeIcon {
+      color: var(--main);
+      font-size: 16px;
+    }
+  }
+  .bluePillButton {
+    display: none;
+  }
+
+  /* Tablet view */
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    border-radius: 0;
+
+    /* Mobile view styles that we don't need */
+    position: relative;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+    transform: none;
+    padding: 0;
 
     .navList {
       list-style: none;
       display: flex;
       flex-direction: row;
-      gap: 30px;
+      gap: 24px;
 
       .navItem {
+        width: fit-content;
+
         a {
-          font-size: 16px;
+          font-size: var(--text-small);
           color: var(--content);
           text-decoration-line: none;
           transition: color 0.3s ease;
+
+          @media (min-width: 992px) {
+            font-size: 16px;
+          }
 
           &:hover {
             cursor: pointer;
@@ -133,9 +148,18 @@
       display: block;
     }
   }
+
+  /* Desktop view */
+  @media (min-width: 992px) {
+    gap: 40px;
+
+    .navList {
+      gap: 30px;
+    }
+  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .showOnMobile {
     opacity: 1;
     visibility: visible;
